@@ -3,9 +3,18 @@ import { Link } from "gatsby"
 import Container from "../container"
 import logo from "../../icons/logo.svg"
 import HeaderLink from "./headerLink"
+import { colors } from "../theme"
 
 const Navbar = () => (
-  <header>
+  <header
+    style={{
+      border: '1px solid ' + colors.lightgray,
+      borderTopStyle: 'none',
+      borderRightStyle: 'none',
+      borderBottomStyle: 'solid',
+      borderLeftStyle: 'none',
+    }}
+  >
     <Container>
       <div
         style={{
