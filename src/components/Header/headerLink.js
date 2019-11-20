@@ -15,12 +15,14 @@ const HeaderLink = ({ title, to }) => (
     <Link
       to={to}
       activeStyle={{
-        outline: 0,
         color: colors.red,
       }}
-      style={{
+      //css instead of style to get :hover to work (uses glamor plugin)
+      css={{
         color: colors.black,
-        ":hover": {
+        transition: 'color 0.2s ease-in-out',
+
+        ':hover': {
           color: colors.red,
         },
       }}
@@ -30,5 +32,6 @@ const HeaderLink = ({ title, to }) => (
     </Link>
   </h2>
 )
+
 
 export default HeaderLink
