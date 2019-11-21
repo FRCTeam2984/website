@@ -60,14 +60,14 @@ const Footer = () => (
           <div>
             <ExternalLinkIcon
               href="https://github.com/FRCTeam2984"
-              size="30px"
+              size="32px"
               marginRight="10px"
             >
               <FaGithub />
             </ExternalLinkIcon>
             <ExternalLinkIcon
               href="https://discordapp.com/invite/RshDdxa"
-              size="30px"
+              size="32px"
             >
               <FaDiscord />
             </ExternalLinkIcon>
