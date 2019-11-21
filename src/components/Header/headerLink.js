@@ -16,16 +16,16 @@ const HeaderLink = ({ title, to }) => (
       to={to}
       activeStyle={{
         color: colors.red,
-        boxShadow: '0px 4px ' + colors.red,
+        boxShadow: "0px 2px " + colors.red,
       }}
       activeClassName="active"
       //css instead of style to get :hover to work (uses glamor plugin)
       css={{
         color: colors.black,
-        transition: 'color 0.2s ease-in-out',
-        height: '36px',
-        display: 'inline-block',
-        ':hover': {
+        transition: "color 0.2s ease-in-out",
+        height: "38px",
+        display: "inline-block",
+        ":hover": {
           color: colors.red,
         },
       }}
@@ -35,6 +35,5 @@ const HeaderLink = ({ title, to }) => (
     </Link>
   </h2>
 )
-
 
 export default HeaderLink

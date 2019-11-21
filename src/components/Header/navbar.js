@@ -8,11 +8,12 @@ import { colors } from "../theme"
 const Navbar = () => (
   <header
     style={{
-      border: '1px solid ' + colors.lightgray,
-      borderTopStyle: 'none',
-      borderRightStyle: 'none',
-      borderBottomStyle: 'solid',
-      borderLeftStyle: 'none',
+      backgroundColor: colors.lightlightgray,
+      border: "1px solid " + colors.lightgray,
+      borderTopStyle: "none",
+      borderRightStyle: "none",
+      borderBottomStyle: "solid",
+      borderLeftStyle: "none",
     }}
   >
     <Container>
