@@ -38,7 +38,13 @@ const Footer = () => (
           >
             Contact Us
           </h3>
-          <div>750 Nautilus St., La Jolla, CA 92037</div>
+          <div
+            style={{
+              marginBottom: "3px",
+            }}
+          >
+            750 Nautilus St., La Jolla, CA 92037
+          </div>
           <div>
             <ExternalLink href="mailto:ljhsvikingrobotics@gmail.com">
               ljhsvikingrobotics@gmail.com
