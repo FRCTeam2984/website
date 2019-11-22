@@ -14,6 +14,11 @@ const Navbar = () => (
       borderRightStyle: "none",
       borderBottomStyle: "solid",
       borderLeftStyle: "none",
+      position: "fixed",
+      zIndex: 1,
+      width: "100%",
+      top: 0,
+      left: 0,
     }}
   >
     <Container>
@@ -58,10 +63,10 @@ const Navbar = () => (
             overflowY: "hidden",
           }}
         >
-          <HeaderLink title="About Us" to="/page-2/"></HeaderLink>
-          <HeaderLink title="Blog" to="/blog"></HeaderLink>
+          <HeaderLink title="Blog" to="/page-2/"></HeaderLink>
           <HeaderLink title="Sponsors" to="/sponsors"></HeaderLink>
           <HeaderLink title="Community Outreach" to="/community"></HeaderLink>
+          <HeaderLink title="Resources" to="/resources"></HeaderLink>
         </nav>
       </div>
     </Container>

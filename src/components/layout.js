@@ -30,8 +30,8 @@ const Layout = ({ children }) => {
       <Container>
         <main
           style={{
-            marginTop: "25px",
-            marginBottom: "25px",
+            marginTop: "100px",
+            marginBottom: "50px",
           }}
         >
           {children}
