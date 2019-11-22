@@ -1,5 +1,4 @@
 import React from "react"
-import { colors } from "../theme"
 import ExternalLink from "./externalLink"
 import { IconContext } from "react-icons"
 
