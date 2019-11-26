@@ -29,7 +29,12 @@ const ThirdPage = () => (
       <SVGWrapper left="-10%" bottom="200px" zIndex="2" scrollFactor="0">
         <LightBlueWave />
       </SVGWrapper>
-      <SVGWrapper left="35vw" bottom="225px" zIndex="3" scrollFactor="-0.15">
+      <SVGWrapper
+        left="calc(50vw - 375px)"
+        bottom="225px"
+        zIndex="3"
+        scrollFactor="-0.15"
+      >
         <Boat />
       </SVGWrapper>
       <SVGWrapper left="-12%" bottom="0" zIndex="4" scrollFactor="-0.05">

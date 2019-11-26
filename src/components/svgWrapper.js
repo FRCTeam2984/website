@@ -25,7 +25,7 @@ export default class SVGWrapper extends React.Component {
   render() {
     return (
       <div
-        style={{
+        css={{
           position: "absolute",
           padding: "0px",
           margin: "0px",
