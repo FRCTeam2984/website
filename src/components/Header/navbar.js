@@ -15,7 +15,7 @@ const Navbar = () => (
       borderBottomStyle: "solid",
       borderLeftStyle: "none",
       position: "fixed",
-      zIndex: 1,
+      zIndex: 10,
       width: "100%",
       top: 0,
       left: 0,
@@ -64,7 +64,7 @@ const Navbar = () => (
           }}
         >
           <HeaderLink title="Blog" to="/page-2/"></HeaderLink>
-          <HeaderLink title="Sponsors" to="/sponsors"></HeaderLink>
+          <HeaderLink title="Sponsors" to="/page-3/"></HeaderLink>
           <HeaderLink title="Community Outreach" to="/community"></HeaderLink>
           <HeaderLink title="Resources" to="/resources"></HeaderLink>
         </nav>

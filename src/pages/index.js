@@ -19,6 +19,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+
       <div
         style={{
           marginBottom: "25px",
