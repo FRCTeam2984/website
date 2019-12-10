@@ -2,12 +2,16 @@ import React from "react"
 
 import HomeLayout from "../components/homeLayout"
 import SEO from "../components/seo"
+import logo from "../icons/logo.svg"
+
+import Container from "../components/container"
+import { FlexBox, FlexItem } from "../components/Helpers/flexBox"
+
+import SVGWrapper from "../components/Helpers/svgWrapper"
 import Boat from "../images/boat.svg"
 import LightBlueWave from "../images/lightbluewave.svg"
 import DarkBlueWave from "../images/darkbluewave.svg"
 import BlueWave from "../images/bluewave.svg"
-import SVGWrapper from "../components/svgWrapper"
-import logo from "../icons/logo.svg"
 
 const ThirdPage = () => (
   <HomeLayout>
@@ -15,7 +19,7 @@ const ThirdPage = () => (
     <div
       css={{
         marginTop: "60px",
-        marginBottom: 0,
+        marginBottom: "50px",
         paddingTop: "100px",
         height: "calc(100vh - 60px)",
         background: "rgb(91,188,221)",
@@ -78,7 +82,20 @@ const ThirdPage = () => (
         </h1>
       </div>
     </div>
-    <div>
+    <Container>
+      <FlexBox>
+        <FlexItem>
+          <h1>Our Values</h1>
+        </FlexItem>
+        <FlexItem>
+          <ul>
+            <li>some random stuff</li>
+            <li>some random stuff</li>
+            <li>some random stuff</li>
+            <li>some random stuff</li>
+          </ul>
+        </FlexItem>
+      </FlexBox>
       <h1>Hi from the second page</h1>
       <p>Welcome to page 2</p>
       <h1>Hi from the second page</h1>
@@ -115,7 +132,7 @@ const ThirdPage = () => (
       <p>Welcome to page 2</p>
       <h1>Hi from the second page</h1>
       <p>Welcome to page 2</p>
-    </div>
+    </Container>
   </HomeLayout>
 )
 

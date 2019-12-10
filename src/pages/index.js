@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
-import fluidImage from "../components/fluidImage"
+import fluidImage from "../components/Helpers/fluidImage"
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`

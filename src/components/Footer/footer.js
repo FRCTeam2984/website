@@ -4,6 +4,7 @@ import Container from "../container"
 import ExternalLink from "./externalLink"
 import ExternalLinkIcon from "./externalLinkIcon"
 import { FaGithub, FaDiscord } from "react-icons/fa"
+import { FlexBox, FlexItem } from "../Helpers/flexBox"
 
 const Footer = () => (
   <footer
@@ -19,18 +20,8 @@ const Footer = () => (
     }}
   >
     <Container>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          marginTop: "25px",
-        }}
-      >
-        <div
-          style={{
-            flex: 1,
-          }}
-        >
+      <FlexBox margin="25px 0 0 0">
+        <FlexItem>
           <h3
             style={{
               marginBottom: "20px",
@@ -50,12 +41,8 @@ const Footer = () => (
               ljhsvikingrobotics@gmail.com
             </ExternalLink>
           </div>
-        </div>
-        <div
-          style={{
-            flex: 1,
-          }}
-        >
+        </FlexItem>
+        <FlexItem>
           <h3
             style={{
               marginBottom: "20px",
@@ -78,12 +65,8 @@ const Footer = () => (
               <FaDiscord />
             </ExternalLinkIcon>
           </div>
-        </div>
-        <div
-          style={{
-            flex: 1,
-          }}
-        >
+        </FlexItem>
+        <FlexItem>
           <h3
             style={{
               marginBottom: "20px",
@@ -106,8 +89,8 @@ const Footer = () => (
               </div>
             </ExternalLink>
           </div>
-        </div>
-      </div>
+        </FlexItem>
+      </FlexBox>
 
       <div
         style={{
