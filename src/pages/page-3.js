@@ -23,21 +23,41 @@ const ThirdPage = () => (
           "linear-gradient(rgba(91,188,221,1) 0%, rgba(225,232,224,1) 100%)",
       }}
     >
-      <SVGWrapper left="-7%" bottom="230px" zIndex="1" scrollFactor="0.05">
+      <SVGWrapper
+        left="-7%"
+        top="70%"
+        zIndex="1"
+        scrollFactor="0.05"
+        maxHeight="30%"
+      >
         <BlueWave />
       </SVGWrapper>
-      <SVGWrapper left="-10%" bottom="200px" zIndex="2" scrollFactor="0">
+      <SVGWrapper
+        left="-10%"
+        top="calc(70% + 30px)"
+        maxHeight="calc(30% - 30px)"
+        zIndex="2"
+        scrollFactor="0"
+      >
         <LightBlueWave />
       </SVGWrapper>
       <SVGWrapper
-        left="calc(50vw - 375px)"
-        bottom="225px"
+        left="calc(35vw)"
+        bottom="calc(25% - 90px)"
         zIndex="3"
         scrollFactor="-0.15"
+        width="35%"
       >
         <Boat />
       </SVGWrapper>
-      <SVGWrapper left="-12%" bottom="0" zIndex="4" scrollFactor="-0.05">
+      <SVGWrapper
+        left="-12%"
+        top="calc(70% + 60px)"
+        width="4800px"
+        height="calc(30% - 60px)"
+        zIndex="4"
+        scrollFactor="-0.05"
+      >
         <DarkBlueWave />
       </SVGWrapper>
       <div
@@ -58,42 +78,44 @@ const ThirdPage = () => (
         </h1>
       </div>
     </div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <div>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+      <h1>Hi from the second page</h1>
+      <p>Welcome to page 2</p>
+    </div>
   </HomeLayout>
 )
 
