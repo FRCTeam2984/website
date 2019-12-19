@@ -1,3 +1,17 @@
+#Develop
+
+1. Clone this repository
+2. `npm install`
+3. `gatsby develop`
+
+# How to add new animations
+
+1. Use [bodymovin](https://github.com/airbnb/lottie-web) to export your after effects animation. (You should have an `your-animation-name.json` file and a folder called `images`)
+2. Move the images inside the `images` folder into the `public/images/animation/your-animation-name` folder (create the folder)
+3. Move the `your-animation-name.json` to the `assets` folder
+4. Inside `your-animation-name.json` each time there is a `"u":` change it to `"u": "/images/animations/your-animation-name/"`  
+   (eg. `"u": "images/"` -> `"u": "/images/animations/first/"`)
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">

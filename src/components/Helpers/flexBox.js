@@ -2,10 +2,6 @@ import React from "react"
 
 //handles flexbox container, defaults to row
 export class FlexBox extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div
@@ -29,10 +25,6 @@ export class FlexBox extends React.Component {
 
 //handles items in flexboxes
 export class FlexItem extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
   render() {
     return (
       <div
