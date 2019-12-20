@@ -4,9 +4,6 @@ import HomeLayout from "../components/homeLayout"
 import SEO from "../components/seo"
 import logo from "../icons/logo.svg"
 
-import Container from "../components/container"
-import { FlexBox, FlexItem } from "../components/Helpers/flexBox"
-
 import SVGWrapper from "../components/Helpers/svgWrapper"
 import Boat from "../images/boat.svg"
 import LightBlueWave from "../images/lightbluewave.svg"
@@ -16,7 +13,10 @@ import BlueWave from "../images/bluewave.svg"
 import LottieAnimation from "../components/Helpers/lottieAnimation"
 import animationData from "../assets/first.json"
 
-import ExternalLink from "../components/Footer/externalLink"
+import Container from "../components/container"
+import { FlexBox, FlexItem } from "../components/Helpers/flexBox"
+import Button from "../components/Helpers/button"
+import Link from "../components/Helpers/link"
 import Icon from "../components/Helpers/icon"
 import {
   FaWrench,
@@ -169,6 +169,11 @@ const ThirdPage = () => (
             </p>
           </FlexItem>
         </FlexBox>
+        <Link>
+          <Button>
+            <p css={{ fontSize: "1.2em", margin: "0" }}>Join Us</p>
+          </Button>
+        </Link>
       </div>
       <div css={{ marginTop: "50px" }}>
         <FlexBox>
@@ -182,9 +187,11 @@ const ThirdPage = () => (
               }}
             >
               Every year we participate in the{" "}
-              <ExternalLink href="https://www.firstinspires.org/robotics/frc">
-                First Robotics Competition
-              </ExternalLink>
+              <Link>
+                <a href="https://www.firstinspires.org/robotics/frc">
+                  First Robotics Competition
+                </a>
+              </Link>
               , in which teams have 6 weeks to design and build a robot that
               competes in a sport-like event. At the end of the build season we
               attend regional competitions with teams from around the world in

@@ -5,6 +5,7 @@ import ExternalLink from "./externalLink"
 import ExternalLinkIcon from "./externalLinkIcon"
 import { FaGithub, FaDiscord } from "react-icons/fa"
 import { FlexBox, FlexItem } from "../Helpers/flexBox"
+import Button from "../Helpers/button"
 
 const Footer = () => (
   <footer
@@ -76,17 +77,7 @@ const Footer = () => (
           </h3>
           <div>
             <ExternalLink href="https://thefoundationoflajollahigh.formstack.com/forms/academic_donation">
-              <div
-                style={{
-                  width: "75px",
-                  textAlign: "center",
-                  padding: "3px",
-                  borderWidth: "1px",
-                  borderStyle: "solid",
-                }}
-              >
-                Donate
-              </div>
+              <Button>Donate</Button>
             </ExternalLink>
           </div>
         </FlexItem>
