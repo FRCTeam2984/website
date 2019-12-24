@@ -64,7 +64,7 @@ const Navbar = () => (
           }}
         >
           <HeaderLink title="Blog" to="/page-2/"></HeaderLink>
-          <HeaderLink title="Sponsors" to="/page-3/"></HeaderLink>
+          <HeaderLink title="Sponsors" to="/sponsors"></HeaderLink>
           <HeaderLink title="Community Outreach" to="/community"></HeaderLink>
           <HeaderLink title="Resources" to="/resources"></HeaderLink>
         </nav>

@@ -76,7 +76,7 @@ const Footer = () => (
             Support Us
           </h3>
           <div>
-            <ExternalLink href="https://thefoundationoflajollahigh.formstack.com/forms/academic_donation">
+            <ExternalLink href="https://www.foundationofljhs.com/donate-to-academics.html#roboticsteam">
               <Button>Donate</Button>
             </ExternalLink>
           </div>
