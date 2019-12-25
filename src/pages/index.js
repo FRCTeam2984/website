@@ -13,6 +13,12 @@ import BlueWave from "../images/bluewave.svg"
 import LottieAnimation from "../components/Helpers/lottieAnimation"
 import animationData from "../assets/first.json"
 
+import Wowee from "../images/sponsors/Wowee.svg"
+import Qualcomm from "../images/sponsors/Qualcomm.svg"
+import LockheedMartin from "../images/sponsors/LockheedMartin.svg"
+import Verance from "../images/sponsors/Verance.svg"
+import CopyCove from "../images/sponsors/CopyCove.svg"
+
 import Container from "../components/container"
 import { FlexBox, FlexItem } from "../components/Helpers/flexBox"
 import Button from "../components/Helpers/button"
@@ -33,10 +39,10 @@ const ThirdPage = () => (
     <SEO title="Home" />
     <div
       css={{
-        marginTop: "60px",
-        marginBottom: "50px",
-        paddingTop: "100px",
         height: "calc(100vh - 60px)",
+        marginTop: "60px",
+        marginBottom: "30px",
+        paddingTop: "100px",
         background:
           "linear-gradient(rgba(91,188,221,1) 0%, rgba(225,232,224,1) 100%)",
       }}
@@ -201,7 +207,9 @@ const ThirdPage = () => (
           </FlexItem>
         </FlexBox>
       </div>
-      <div css={{ marginTop: "50px", textAlign: "center" }}>
+      <div
+        css={{ marginTop: "50px", marginBottom: "50px", textAlign: "center" }}
+      >
         <h1>Our Sponsors</h1>
         <p>We rely on our sponsors for funding, allowing us to compete.</p>
         <LinkStyle>
@@ -218,6 +226,33 @@ const ThirdPage = () => (
             </Button>
           </Link>
         </LinkStyle>
+        <div
+          css={{
+            marginTop: "30px",
+            "& svg": {
+              width: "100%",
+              height: "auto",
+            },
+          }}
+        >
+          <FlexBox alignItems="center">
+            <FlexItem flex="1" margin="0 1% 0 0">
+              <Wowee />
+            </FlexItem>
+            <FlexItem flex="1" margin="0 1% 0">
+              <Qualcomm />
+            </FlexItem>
+            <FlexItem flex="1" margin="0 1% 0">
+              <LockheedMartin />
+            </FlexItem>
+            <FlexItem flex="1" margin="0 1% 0">
+              <Verance />
+            </FlexItem>
+            <FlexItem flex="1" margin="0 0 0 1%">
+              <CopyCove />
+            </FlexItem>
+          </FlexBox>
+        </div>
       </div>
     </Container>
   </HomeLayout>

@@ -63,6 +63,7 @@ const Navbar = () => (
             overflowY: "hidden",
           }}
         >
+          <HeaderLink to="/join">Join</HeaderLink>
           <HeaderLink to="/page-2/">Blog</HeaderLink>
           <HeaderLink to="/sponsors">Sponsors</HeaderLink>
           <HeaderLink to="/community">Community Outreach</HeaderLink>
