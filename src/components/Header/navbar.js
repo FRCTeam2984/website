@@ -63,10 +63,10 @@ const Navbar = () => (
             overflowY: "hidden",
           }}
         >
-          <HeaderLink title="Blog" to="/page-2/"></HeaderLink>
-          <HeaderLink title="Sponsors" to="/sponsors"></HeaderLink>
-          <HeaderLink title="Community Outreach" to="/community"></HeaderLink>
-          <HeaderLink title="Resources" to="/resources"></HeaderLink>
+          <HeaderLink to="/page-2/">Blog</HeaderLink>
+          <HeaderLink to="/sponsors">Sponsors</HeaderLink>
+          <HeaderLink to="/community">Community Outreach</HeaderLink>
+          <HeaderLink to="/resources">Resources</HeaderLink>
         </nav>
       </div>
     </Container>

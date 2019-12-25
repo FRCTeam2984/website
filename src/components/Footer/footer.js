@@ -17,7 +17,7 @@ const Footer = () => (
       borderBottomStyle: "none",
       borderLeftStyle: "none",
       marginBottom: "auto",
-      height: "200px",
+      minHeight: "200px",
     }}
   >
     <Container>
@@ -85,7 +85,8 @@ const Footer = () => (
 
       <div
         style={{
-          marginTop: "45px",
+          marginTop: "25px",
+          marginBottom: "20px",
           textAlign: "center",
         }}
       >

@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React from "react"
 import { colors } from "../theme"
 
-const HeaderLink = ({ title, to }) => (
+const HeaderLink = ({ children, to }) => (
   <h2
     style={{
       marginTop: "20px",
@@ -31,7 +31,7 @@ const HeaderLink = ({ title, to }) => (
       }}
       partiallyActive={true}
     >
-      {title}
+      {children}
     </Link>
   </h2>
 )

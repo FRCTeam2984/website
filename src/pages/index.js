@@ -24,6 +24,7 @@ import {
   FaComments,
   FaMapMarkedAlt,
 } from "react-icons/fa"
+import { Link } from "gatsby"
 
 import { colors } from "../components/theme"
 
@@ -203,12 +204,20 @@ const ThirdPage = () => (
       <div css={{ marginTop: "50px", textAlign: "center" }}>
         <h1>Our Sponsors</h1>
         <p>We rely on our sponsors for funding, allowing us to compete.</p>
-        <Button display="inline-block" margin="0 5px 0 0">
-          Become a Sponsor
-        </Button>
-        <Button display="inline-block" margin="0 0 0 5px">
-          See All Sponsors
-        </Button>
+        <LinkStyle>
+          <Link to="/sponsors">
+            <Button display="inline-block" margin="0 5px 0 0">
+              See All Sponsors
+            </Button>
+          </Link>
+        </LinkStyle>
+        <LinkStyle>
+          <Link to="/sponsors#become-a-sponsor">
+            <Button display="inline-block" margin="0 0 0 5px">
+              Become a Sponsor
+            </Button>
+          </Link>
+        </LinkStyle>
       </div>
     </Container>
   </HomeLayout>

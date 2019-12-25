@@ -32,6 +32,7 @@ const Layout = ({ children }) => {
           style={{
             marginTop: "100px",
             marginBottom: "50px",
+            minHeight: "calc(100vh - 355px)",
           }}
         >
           {children}
