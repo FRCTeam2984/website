@@ -22,7 +22,7 @@ import CopyCove from "../images/sponsors/CopyCove.svg"
 import Container from "../components/container"
 import { FlexBox, FlexItem } from "../components/Helpers/flexBox"
 import Button from "../components/Helpers/button"
-import LinkStyle from "../components/Helpers/linkStyle"
+import { LinkStyle, TextLinkStyle } from "../components/Helpers/linkStyle"
 import Icon from "../components/Helpers/icon"
 import {
   FaWrench,
@@ -133,7 +133,7 @@ const ThirdPage = () => (
           </FlexItem>
           <FlexItem flex="1">
             <h1 css={{ color: colors.red }}>1</h1>
-            <h3>Regional Wins</h3>
+            <h3>Regional Win</h3>
           </FlexItem>
         </FlexBox>
         <hr></hr>
@@ -190,15 +190,15 @@ const ThirdPage = () => (
               }}
             >
               Every year we participate in the{" "}
-              <LinkStyle>
+              <TextLinkStyle>
                 <a href="https://www.firstinspires.org/robotics/frc">
                   First Robotics Competition
                 </a>
-              </LinkStyle>
+              </TextLinkStyle>
               , in which teams have 6 weeks to design and build a robot that
               competes in a sport-like event. At the end of the build season we
               attend regional competitions with teams from around the world in
-              San Diego. At the 2018 San Diego Regional we competed with teams
+              San Diego. At the 2018 San Diego Regional, we competed with teams
               from Chile, Denmark, Netherlands and Brazil.
             </p>
           </FlexItem>

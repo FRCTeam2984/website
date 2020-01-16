@@ -30,7 +30,6 @@ const Navbar = () => (
           height: 60,
         }}
       >
-        {/* Use h1 to use the header font */}
         <h1 style={{ marginBottom: "auto", marginTop: "auto" }}>
           <Link
             to="/"

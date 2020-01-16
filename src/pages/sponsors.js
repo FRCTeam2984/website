@@ -22,7 +22,7 @@ import Wowee from "../images/sponsors/Wowee.svg"
 import Xerox from "../images/sponsors/Xerox.svg"
 
 import Button from "../components/Helpers/button"
-import LinkStyle from "../components/Helpers/linkStyle"
+import { TextLinkStyle, LinkStyle } from "../components/Helpers/linkStyle"
 import { Link } from "gatsby"
 
 const Sponsors = () => (
@@ -157,11 +157,12 @@ const Sponsors = () => (
       <h3>Become a Mentor</h3>
       <p>
         If you are interested in becoming a mentor, please contact us at{" "}
-        <LinkStyle>
+        <TextLinkStyle>
           <a href="mailto:ljhsvikingrobotics@gmail.com">
             ljhsvikingrobotics@gmail.com
           </a>
-        </LinkStyle>
+        </TextLinkStyle>
+        .
       </p>
       <h3>Donate Money</h3>
       <p>
@@ -172,7 +173,7 @@ const Sponsors = () => (
       <FlexBox>
         <FlexItem flex="1">
           <h4>Card</h4>
-          <p css={{ paddingRight: "1em" }}>
+          <p css={{ paddingRight: "1.2em" }}>
             Make sure to select the Robotics Team from the dropdown menu of
             academic departments.
           </p>
@@ -184,7 +185,7 @@ const Sponsors = () => (
         </FlexItem>
         <FlexItem flex="1">
           <h4>Check</h4>
-          <p css={{ paddingRight: "1em" }}>
+          <p css={{ paddingRight: "1.2em" }}>
             Make Checks Payable To:<br></br>
             The Foundation of La Jolla High School (RE:Robotics Club)<br></br>
             Mail Checks To:<br></br>

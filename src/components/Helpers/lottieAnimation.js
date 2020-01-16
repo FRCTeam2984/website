@@ -22,7 +22,7 @@ export default class LottieAnimation extends React.Component {
       document.documentElement.clientHeight,
       window.innerHeight
     )
-    if (!(rect.bottom < 100 || rect.top - viewHeight >= -100)) {
+    if (!(rect.bottom < 250 || rect.top - viewHeight >= -250)) {
       setTimeout(
         function() {
           this.setState({ playingState: "playing" })

@@ -1,17 +1,11 @@
 import React from "react"
 import { colors } from "../theme"
+import { LinkStyle } from "../Helpers/linkStyle"
 
 const ExternalLink = ({ children, href }) => (
-  <a
-    href={href}
-    css={{
-      ":hover": {
-        color: colors.red,
-      },
-    }}
-  >
-    {children}
-  </a>
+  <LinkStyle>
+    <a href={href}>{children}</a>
+  </LinkStyle>
 )
 
 export default ExternalLink

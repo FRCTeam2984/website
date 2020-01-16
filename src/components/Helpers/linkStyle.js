@@ -4,7 +4,7 @@
 import React from "react"
 import { colors } from "../theme"
 
-const LinkStyle = ({ children }) => (
+export const LinkStyle = ({ children }) => (
   <span
     css={{
       color: colors.black,
@@ -19,4 +19,19 @@ const LinkStyle = ({ children }) => (
   </span>
 )
 
-export default LinkStyle
+//contains extra underline
+export const TextLinkStyle = ({ children }) => (
+  <span
+    css={{
+      color: colors.black,
+      transition: "color 0.2s ease-in-out",
+      ":hover": {
+        color: colors.red,
+        cursor: "pointer",
+        textDecoration: "underline",
+      },
+    }}
+  >
+    {children}
+  </span>
+)
