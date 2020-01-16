@@ -15,7 +15,7 @@ const Join = () => (
     <ul>
       <li>
         <TextLinkStyle>
-          <a href="#">Team Handbook</a>
+          <a href={"pdfs/team-handbook.pdf"}>Team Handbook</a>
         </TextLinkStyle>
       </li>
     </ul>
@@ -28,18 +28,30 @@ const Join = () => (
       </li>
 
       <li>
-        <TextLinkStyle>Emergency Contact Form</TextLinkStyle>
+        <TextLinkStyle>
+          <a href={"pdfs/join/emergency-contact-form.pdf"}>
+            Emergency Contact Form
+          </a>
+        </TextLinkStyle>
       </li>
 
       <li>
-        <TextLinkStyle>Parental Agreement Form</TextLinkStyle>
+        <TextLinkStyle>
+          <a href={"pdfs/join/parental-agreement-form.pdf"}>
+            Parental Agreement Form
+          </a>
+        </TextLinkStyle>
       </li>
     </ol>
     <h3>Safety Test</h3>
     <p>First, read the safety test study guide.</p>
     <ul>
       <li>
-        <TextLinkStyle>Safety Test Study Guide</TextLinkStyle>
+        <TextLinkStyle>
+          <a href={"pdfs/join/safety-test-study-guide.pdf"}>
+            Safety Test Study Guide
+          </a>
+        </TextLinkStyle>
       </li>
     </ul>
     <p>Then, complete the safety test.</p>
@@ -49,7 +61,9 @@ const Join = () => (
     </p>
     <ul>
       <li>
-        <TextLinkStyle>Safety Test</TextLinkStyle>
+        <TextLinkStyle>
+          <a href={"pdfs/join/safety-test.pdf"}>Safety Test</a>
+        </TextLinkStyle>
       </li>
       <li>
         <TextLinkStyle>

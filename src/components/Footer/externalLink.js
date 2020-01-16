@@ -1,5 +1,4 @@
 import React from "react"
-import { colors } from "../theme"
 import { LinkStyle } from "../Helpers/linkStyle"
 
 const ExternalLink = ({ children, href }) => (

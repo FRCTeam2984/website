@@ -174,9 +174,11 @@ const ThirdPage = () => (
           </FlexItem>
         </FlexBox>
         <LinkStyle>
-          <Button>
-            <p css={{ margin: "0" }}>Join Us</p>
-          </Button>
+          <Link to="/join">
+            <Button>
+              <p css={{ margin: "0" }}>Join Us</p>
+            </Button>
+          </Link>
         </LinkStyle>
       </div>
       <div css={{ marginTop: "50px" }}>
