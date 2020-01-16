@@ -20,7 +20,6 @@ import Verance from "../images/sponsors/Verance.svg"
 import CopyCove from "../images/sponsors/CopyCove.svg"
 
 import Container from "../components/container"
-import { FlexBox, FlexItem } from "../components/Helpers/flexBox"
 import Button from "../components/Helpers/button"
 import { LinkStyle, TextLinkStyle } from "../components/Helpers/linkStyle"
 import Icon from "../components/Helpers/icon"
@@ -104,8 +103,8 @@ const ThirdPage = () => (
       </div>
     </div>
     <Container>
-      <FlexBox>
-        <FlexItem flex="1">
+      <div className="row">
+        <div className="col-12 col-md-10 col-lg-8">
           <h1>Our Mission</h1>
           <p>
             Vikings Robotics support the building of real world skills,
@@ -113,32 +112,31 @@ const ThirdPage = () => (
             giving back to the community through our outreach programs with
             local schools and groups.
           </p>
-        </FlexItem>
-        <FlexItem flex="1"></FlexItem>
-      </FlexBox>
+        </div>
+      </div>
       <div css={{ marginTop: "50px" }}>
         <h1>Our Team</h1>
-        <FlexBox>
-          <FlexItem flex="1">
+        <div className="row">
+          <div className="col-6 col-md-3">
             <h1 css={{ color: colors.red }}>20</h1>
             <h3>Members</h3>
-          </FlexItem>
-          <FlexItem flex="1">
+          </div>
+          <div className="col-6 col-md-3">
             <h1 css={{ color: colors.red }}>2</h1>
             <h3>Mentors</h3>
-          </FlexItem>
-          <FlexItem flex="1">
+          </div>
+          <div className="col-6 col-md-3">
             <h1 css={{ color: colors.red }}>12</h1>
             <h3>Seasons</h3>
-          </FlexItem>
-          <FlexItem flex="1">
+          </div>
+          <div className="col-6 col-md-3">
             <h1 css={{ color: colors.red }}>1</h1>
             <h3>Regional Win</h3>
-          </FlexItem>
-        </FlexBox>
+          </div>
+        </div>
         <hr></hr>
-        <FlexBox>
-          <FlexItem flex="1" padding="0 10px 0 0">
+        <div className="row">
+          <div className="col-12 col-sm-6 col-md-3">
             <Icon size="32px" color={colors.red} margin="0 0 10px 0">
               <FaWrench />
             </Icon>
@@ -147,8 +145,8 @@ const ThirdPage = () => (
               Creates the parts of the robot as well as parts of the field for
               practice.
             </p>
-          </FlexItem>
-          <FlexItem flex="1" padding="0 10px 0 0">
+          </div>
+          <div className="col-12 col-sm-6 col-md-3">
             <Icon size="32px" color={colors.red} margin="0 0 10px 0">
               <FaCodeBranch />
             </Icon>
@@ -157,22 +155,22 @@ const ThirdPage = () => (
               Writes the code that drives the robot as well as all the wiring
               the robot needs to function.
             </p>
-          </FlexItem>
-          <FlexItem flex="1" padding="0 10px 0 0">
+          </div>
+          <div className="col-12 col-sm-6 col-md-3">
             <Icon size="32px" color={colors.red} margin="0 0 10px 0">
               <FaComments />
             </Icon>
             <h3>Communications Team</h3>
             <p>Deals with all our fundraising and website development.</p>
-          </FlexItem>
-          <FlexItem flex="1">
+          </div>
+          <div className="col-12 col-sm-6 col-md-3">
             <Icon size="32px" color={colors.red} margin="0 0 10px 0">
               <FaMapMarkedAlt />
             </Icon>
             <h3>Logistics Team</h3>
             <p>Handles budgeting and travel arrangements.</p>
-          </FlexItem>
-        </FlexBox>
+          </div>
+        </div>
         <LinkStyle>
           <Link to="/join">
             <Button>
@@ -181,33 +179,31 @@ const ThirdPage = () => (
           </Link>
         </LinkStyle>
       </div>
-      <div css={{ marginTop: "50px" }}>
-        <FlexBox>
-          <FlexItem flex="2">
-            <h1>First Robotics Competition</h1>
-            <p
-              css={{
-                paddingRight: "25px",
-                textAlign: "justify",
-              }}
-            >
-              Every year we participate in the{" "}
-              <TextLinkStyle>
-                <a href="https://www.firstinspires.org/robotics/frc">
-                  First Robotics Competition
-                </a>
-              </TextLinkStyle>
-              , in which teams have 6 weeks to design and build a robot that
-              competes in a sport-like event. At the end of the build season we
-              attend regional competitions with teams from around the world in
-              San Diego. At the 2018 San Diego Regional, we competed with teams
-              from Chile, Denmark, Netherlands and Brazil.
-            </p>
-          </FlexItem>
-          <FlexItem flex="1">
-            <LottieAnimation animationData={animationData}></LottieAnimation>
-          </FlexItem>
-        </FlexBox>
+      <div className="row" css={{ marginTop: "50px" }}>
+        <div className="col-12 col-md-6 col-lg-8">
+          <h1>First Robotics Competition</h1>
+          <p
+            css={{
+              paddingRight: "25px",
+              textAlign: "justify",
+            }}
+          >
+            Every year we participate in the{" "}
+            <TextLinkStyle>
+              <a href="https://www.firstinspires.org/robotics/frc">
+                First Robotics Competition
+              </a>
+            </TextLinkStyle>
+            , in which teams have 6 weeks to design and build a robot that
+            competes in a sport-like event. At the end of the build season we
+            attend regional competitions with teams from around the world in San
+            Diego. At the 2018 San Diego Regional, we competed with teams from
+            Chile, Denmark, Netherlands and Brazil.
+          </p>
+        </div>
+        <div className="col-8 col-sm-6 col-lg-4">
+          <LottieAnimation animationData={animationData}></LottieAnimation>
+        </div>
       </div>
       <div
         css={{ marginTop: "50px", marginBottom: "50px", textAlign: "center" }}
@@ -229,6 +225,7 @@ const ThirdPage = () => (
           </Link>
         </LinkStyle>
         <div
+          className="row align-items-center"
           css={{
             marginTop: "30px",
             "& svg": {
@@ -237,23 +234,21 @@ const ThirdPage = () => (
             },
           }}
         >
-          <FlexBox alignItems="center">
-            <FlexItem flex="1" margin="0 1% 0 0">
-              <Wowee />
-            </FlexItem>
-            <FlexItem flex="1" margin="0 1% 0">
-              <Qualcomm />
-            </FlexItem>
-            <FlexItem flex="1" margin="0 1% 0">
-              <LockheedMartin />
-            </FlexItem>
-            <FlexItem flex="1" margin="0 1% 0">
-              <Verance />
-            </FlexItem>
-            <FlexItem flex="1" margin="0 0 0 1%">
-              <CopyCove />
-            </FlexItem>
-          </FlexBox>
+          <div className="col">
+            <Wowee />
+          </div>
+          <div className="col">
+            <Qualcomm />
+          </div>
+          <div className="col">
+            <LockheedMartin />
+          </div>
+          <div className="col">
+            <Verance />
+          </div>
+          <div className="col">
+            <CopyCove />
+          </div>
         </div>
       </div>
     </Container>

@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { FlexBox, FlexItem } from "../components/Helpers/flexBox"
 
 import SponsorWrapper from "../components/Helpers/sponsorWrapper"
 import AceHardware from "../images/sponsors/AceHardware.svg"
@@ -25,6 +24,8 @@ import Button from "../components/Helpers/button"
 import { TextLinkStyle, LinkStyle } from "../components/Helpers/linkStyle"
 import { Link } from "gatsby"
 
+import { css } from "@emotion/core"
+
 const Sponsors = () => (
   <Layout>
     <SEO title="Sponsors" />
@@ -45,93 +46,85 @@ const Sponsors = () => (
         </Link>
       </LinkStyle>
       <p css={{ fontSize: "1.2em" }}>Thank you for your support!</p>
-      <FlexBox alignItems="center">
-        <FlexItem flex="1">
+      <div class="row">
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.acehardware.com/">
             <AceHardware />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.copycove.com/">
             <CopyCove />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.dinigroup.com/">
             <DiniGroup />
           </SponsorWrapper>
-        </FlexItem>
-      </FlexBox>
+        </div>
 
-      <FlexBox alignItems="center">
-        <FlexItem flex="1">
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.kiwanis.org/">
             <Kiwanis />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.lockheedmartin.com/">
             <LockheedMartin />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://monsanto.com/">
             <Monsanto />
           </SponsorWrapper>
-        </FlexItem>
-      </FlexBox>
+        </div>
 
-      <FlexBox alignItems="center">
-        <FlexItem flex="1">
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.perkins.com/">
             <Perkins />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.perkinscoie.com/">
             <PerkinsCoie />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="http://www.quasarfs.com/">
             <QFS />
           </SponsorWrapper>
-        </FlexItem>
-      </FlexBox>
-      <FlexBox alignItems="center">
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.qualcomm.com/">
             <Qualcomm />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.solidworks.com/">
             <SolidWorks />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper>
             <Sperr />
           </SponsorWrapper>
-        </FlexItem>
-      </FlexBox>
-      <FlexBox alignItems="center">
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.verance.com/">
             <Verance />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://wowwee.com/">
             <Wowee />
           </SponsorWrapper>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.xerox.com/">
             <Xerox />
           </SponsorWrapper>
-        </FlexItem>
-      </FlexBox>
+        </div>
+      </div>
     </div>
     <div
       id="become-a-sponsor"
@@ -170,8 +163,8 @@ const Sponsors = () => (
         tax deductible.
       </p>
 
-      <FlexBox>
-        <FlexItem flex="1">
+      <div className="row">
+        <div className="col-12 col-sm-6 col-md-4">
           <h4>Card</h4>
           <p css={{ paddingRight: "1.2em" }}>
             Make sure to select the Robotics Team from the dropdown menu of
@@ -182,8 +175,15 @@ const Sponsors = () => (
               <Button>Donate</Button>
             </a>
           </LinkStyle>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div
+          className="col-12 col-sm-6 col-md-4"
+          css={css`
+            @media (max-width: 576px) {
+              margin-top: 3.5em;
+            }
+          `}
+        >
           <h4>Check</h4>
           <p css={{ paddingRight: "1.2em" }}>
             Make Checks Payable To:<br></br>
@@ -196,8 +196,15 @@ const Sponsors = () => (
             750 Nautilus St.<br></br>
             La Jolla, CA 92037
           </Button>
-        </FlexItem>
-        <FlexItem flex="1">
+        </div>
+        <div
+          className="col-12 col-sm-6 col-md-4"
+          css={css`
+            @media (max-width: 768px) {
+              margin-top: 3.5em;
+            }
+          `}
+        >
           <h4>Become a Corporate Sponsor</h4>
           <p>
             Your logo will be added to the list of our corporate sponsors.
@@ -209,8 +216,8 @@ const Sponsors = () => (
               </a>
             </LinkStyle>
           </p>
-        </FlexItem>
-      </FlexBox>
+        </div>
+      </div>
     </div>
   </Layout>
 )

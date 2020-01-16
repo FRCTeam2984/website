@@ -4,7 +4,6 @@ import Container from "../container"
 import ExternalLink from "./externalLink"
 import ExternalLinkIcon from "./externalLinkIcon"
 import { FaGithub, FaDiscord } from "react-icons/fa"
-import { FlexBox, FlexItem } from "../Helpers/flexBox"
 import Button from "../Helpers/button"
 
 const Footer = () => (
@@ -21,11 +20,12 @@ const Footer = () => (
     }}
   >
     <Container>
-      <FlexBox margin="25px 0 0 0">
-        <FlexItem>
+      <div className="row" css={{ marginTop: "25px" }}>
+        <div className="col-12 col-md-4">
           <h3
             style={{
               marginBottom: "20px",
+              marginTop: "25px",
             }}
           >
             Contact Us
@@ -42,11 +42,12 @@ const Footer = () => (
               ljhsvikingrobotics@gmail.com
             </ExternalLink>
           </div>
-        </FlexItem>
-        <FlexItem>
+        </div>
+        <div className="col-12 col-sm-6 col-md-4">
           <h3
             style={{
               marginBottom: "20px",
+              marginTop: "25px",
             }}
           >
             Join Us
@@ -66,11 +67,12 @@ const Footer = () => (
               <FaDiscord />
             </ExternalLinkIcon>
           </div>
-        </FlexItem>
-        <FlexItem>
+        </div>
+        <div className="col-12 col-sm-6 col-md-4">
           <h3
             style={{
               marginBottom: "20px",
+              marginTop: "25px",
             }}
           >
             Support Us
@@ -80,8 +82,8 @@ const Footer = () => (
               <Button>Donate</Button>
             </ExternalLink>
           </div>
-        </FlexItem>
-      </FlexBox>
+        </div>
+      </div>
 
       <div
         style={{
