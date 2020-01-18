@@ -4,73 +4,145 @@ import Container from "../container"
 import logo from "../../icons/logo.svg"
 import HeaderLink from "./headerLink"
 import { colors } from "../theme"
+import { Global, css } from "@emotion/core"
+import Icon from "../Helpers/icon"
+import { MdMenu } from "react-icons/md"
 
-const Navbar = () => (
-  <header
-    style={{
-      backgroundColor: colors.lightlightgray,
-      border: "1px solid " + colors.lightgray,
-      borderTopStyle: "none",
-      borderRightStyle: "none",
-      borderBottomStyle: "solid",
-      borderLeftStyle: "none",
-      position: "fixed",
-      zIndex: 10,
-      width: "100%",
-      top: 0,
-      left: 0,
-    }}
-  >
-    <Container>
-      <div
+export default class Navbar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { active: "" }
+  }
+  toggleNavbar = e => {
+    console.log(this.state.active)
+    let isActive = this.state.active === "active" ? "" : "active"
+    this.setState({ active: isActive })
+  }
+
+  render() {
+    return (
+      <header
         style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "stretch",
-          height: 60,
+          backgroundColor: colors.lightlightgray,
+          border: "1px solid " + colors.lightgray,
+          borderTopStyle: "none",
+          borderRightStyle: "none",
+          borderBottomStyle: "solid",
+          borderLeftStyle: "none",
+          position: "fixed",
+          zIndex: 10,
+          width: "100%",
+          top: 0,
+          left: 0,
         }}
       >
-        <h1 style={{ marginBottom: "auto", marginTop: "auto" }}>
-          <Link
-            to="/"
-            style={{
-              display: "flex",
-              height: "100%",
-              alignItems: "center",
-            }}
+        <Container>
+          <Global
+            styles={css`
+              .active {
+                display: flex !important;
+              }
+            `}
+          />
+          <div
+            css={css`
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+              align-items: stretch;
+              @media (min-width: 993px) {
+                height: 60px;
+                flex-direction: row;
+              }
+              @media (max-width: 992px) {
+                flex-direction: column;
+              }
+            `}
           >
-            <img src={logo} height="40" alt="logo" style={{ margin: "auto" }} />
-            <span
-              style={{
-                marginLeft: 10,
-                fontSize: 30,
-                fontWeight: 600,
-              }}
-            >
-              Vikings Robotics
-            </span>
-          </Link>
-        </h1>
-        <nav
-          style={{
-            flex: "1",
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "stretch",
-            justifyContent: "flex-end",
-            overflowX: "auto",
-            overflowY: "hidden",
-          }}
-        >
-          <HeaderLink to="/join">Join</HeaderLink>
-          <HeaderLink to="/page-2/">Blog</HeaderLink>
-          <HeaderLink to="/sponsors">Sponsors</HeaderLink>
-          <HeaderLink to="/community">Community Outreach</HeaderLink>
-          <HeaderLink to="/resources">Resources</HeaderLink>
-        </nav>
-      </div>
-    </Container>
-  </header>
-)
+            <div className="row align-items-center justify-content-between">
+              <div className="col-auto">
+                <h1 style={{ marginBottom: "auto", marginTop: "auto" }}>
+                  <Link
+                    to="/"
+                    style={{
+                      display: "flex",
+                      height: "100%",
+                      alignItems: "center",
+                    }}
+                  >
+                    <img
+                      src={logo}
+                      height="40"
+                      alt="logo"
+                      style={{ margin: "auto" }}
+                    />
+                    <span
+                      css={css`
+                        margin-left: 10px;
+                        font-size: 24pt;
+                        font-weight: 600;
+                        @media (max-width: 475px) {
+                          display: none;
+                        }
+                      `}
+                    >
+                      Vikings Robotics
+                    </span>
+                  </Link>
+                </h1>
+              </div>
+              <div
+                className="col navbar-toggle"
+                onClick={this.toggleNavbar}
+                css={css`
+                  padding-top: 8px;
+                  display: flex;
+                  text-align: right;
+                  @media (max-width: 992px) {
+                    display: block;
+                  }
+                  @media (min-width: 993px) {
+                    display: none;
+                  }
+                  :hover {
+                    cursor: pointer;
+                  }
+                `}
+              >
+                <Icon size="48px">
+                  <MdMenu />
+                </Icon>
+              </div>
+            </div>
 
-export default Navbar
+            <nav
+              className={this.state.active}
+              css={css`
+                display: flex;
+                align-items: stretch;
+                justify-content: flex-end;
+                overflow-x: auto;
+                overflow-y: hidden;
+
+                @media (max-width: 992px) {
+                  flex-direction: column;
+                  display: none;
+                }
+                @media (min-width: 993px) {
+                  flex-direction: row;
+                }
+              `}
+            >
+              <HeaderLink to="/join">Join</HeaderLink>
+              <HeaderLink to="/page-2/">Blog</HeaderLink>
+              <HeaderLink to="/sponsors">Sponsors</HeaderLink>
+              <HeaderLink to="/community">Outreach</HeaderLink>
+              <HeaderLink to="/resources">Resources</HeaderLink>
+              <HeaderLink to="/calendar">Calendar</HeaderLink>
+            </nav>
+          </div>
+        </Container>
+      </header>
+    )
+  }
+}
