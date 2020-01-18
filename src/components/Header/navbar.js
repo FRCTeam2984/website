@@ -13,10 +13,17 @@ export default class Navbar extends React.Component {
     super(props)
     this.state = { active: "" }
   }
+
   toggleNavbar = e => {
-    console.log(this.state.active)
     let isActive = this.state.active === "active" ? "" : "active"
     this.setState({ active: isActive })
+    console.log(this.state.active)
+  }
+
+  mobileCollapse = e => {
+    if (this.state.active === "active") {
+      this.setState({ active: "" })
+    }
   }
 
   render() {
@@ -30,7 +37,7 @@ export default class Navbar extends React.Component {
           borderBottomStyle: "solid",
           borderLeftStyle: "none",
           position: "fixed",
-          zIndex: 10,
+          zIndex: 100,
           width: "100%",
           top: 0,
           left: 0,
@@ -41,6 +48,16 @@ export default class Navbar extends React.Component {
             styles={css`
               .active {
                 display: flex !important;
+                @media (max-width: 992px) {
+                  max-height: 360px !important;
+                }
+              }
+
+              .collapsible-navbar-content {
+                @media (max-width: 992px) {
+                  max-height: 0;
+                }
+                transition: max-height 0.2s ease-out;
               }
             `}
           />
@@ -69,6 +86,7 @@ export default class Navbar extends React.Component {
                       height: "100%",
                       alignItems: "center",
                     }}
+                    onClick={this.mobileCollapse}
                   >
                     <img
                       src={logo}
@@ -98,6 +116,8 @@ export default class Navbar extends React.Component {
                   padding-top: 8px;
                   display: flex;
                   text-align: right;
+                  color: #666666;
+                  transition: color 0.2s ease-in-out;
                   @media (max-width: 992px) {
                     display: block;
                   }
@@ -106,6 +126,7 @@ export default class Navbar extends React.Component {
                   }
                   :hover {
                     cursor: pointer;
+                    color: #222222;
                   }
                 `}
               >
@@ -116,22 +137,21 @@ export default class Navbar extends React.Component {
             </div>
 
             <nav
-              className={this.state.active}
+              className={this.state.active + " collapsible-navbar-content"}
               css={css`
                 display: flex;
                 align-items: stretch;
                 justify-content: flex-end;
-                overflow-x: auto;
-                overflow-y: hidden;
+                overflow: hidden;
 
                 @media (max-width: 992px) {
                   flex-direction: column;
-                  display: none;
                 }
                 @media (min-width: 993px) {
                   flex-direction: row;
                 }
               `}
+              onClick={this.mobileCollapse}
             >
               <HeaderLink to="/join">Join</HeaderLink>
               <HeaderLink to="/page-2/">Blog</HeaderLink>
