@@ -16,7 +16,7 @@ const HeaderLink = ({ children, to }) => (
     css={[
       {
         color: colors.black,
-        transition: "color 0.2s ease-in-out",
+        transition: "color 0.2s ease-out",
         height: "57px",
         verticalAlign: "middle",
         display: "inline-block",

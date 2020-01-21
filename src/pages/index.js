@@ -31,20 +31,34 @@ import {
 } from "react-icons/fa"
 import { Link } from "gatsby"
 
+import { css } from "@emotion/core"
+
 import { colors } from "../components/theme"
 
 const ThirdPage = () => (
   <HomeLayout>
     <SEO title="Home" />
     <div
-      css={{
-        height: "calc(100vh - 60px)",
-        marginTop: "60px",
-        marginBottom: "30px",
-        paddingTop: "100px",
-        background:
-          "linear-gradient(rgba(91,188,221,1) 0%, rgba(225,232,224,1) 100%)",
-      }}
+      css={[
+        {
+          height: "calc(100vh - 60px)",
+          marginTop: "60px",
+          marginBottom: "30px",
+          background:
+            "linear-gradient(rgba(91,188,221,1) 0%, rgba(225,232,224,1) 100%)",
+        },
+        css`
+          @media (max-width: 576px) {
+            padding-top: 10%;
+          }
+          @media (min-width: 577px) {
+            padding-top: 50px;
+          }
+          @media (min-width: 769px) {
+            padding-top: 100px;
+          }
+        `,
+      ]}
     >
       <SVGWrapper
         left="-7%"
@@ -65,12 +79,12 @@ const ThirdPage = () => (
         <LightBlueWave />
       </SVGWrapper>
       <SVGWrapper
-        left="calc(35vw)"
-        bottom="calc(25% - 90px)"
+        left="min(calc(35vw), calc(50vw - 150px))"
+        bottom="max(calc(30% - 150px), 13%)"
         zIndex="3"
         scrollFactor="-0.15"
         width="35%"
-        minWidth="400px"
+        minWidth="300px"
       >
         <Boat />
       </SVGWrapper>
@@ -85,21 +99,65 @@ const ThirdPage = () => (
         <DarkBlueWave />
       </SVGWrapper>
       <div
-        style={{
-          textAlign: "center",
-        }}
+        css={css`
+          @media (max-width: 768px) {
+            .desktop {
+              display: none;
+            }
+            .mobile {
+              display: block;
+            }
+          }
+          @media (min-width: 769px) {
+            .desktop {
+              display: block;
+            }
+            .mobile {
+              display: none;
+            }
+          }
+        `}
       >
-        <h1
+        <div
+          className="desktop"
           style={{
-            fontSize: "72pt",
-            verticalAlign: "middle",
-            lineHeight: "100px",
-            height: "100px",
+            textAlign: "center",
           }}
         >
-          <img src={logo} height="72" alt="logo" style={{ margin: 0 }} /> | Team
-          2984
-        </h1>
+          <h1
+            style={{
+              fontSize: "72pt",
+              verticalAlign: "middle",
+              lineHeight: "100px",
+              height: "100px",
+            }}
+          >
+            <img src={logo} height="72" alt="logo" style={{ margin: 0 }} /> |
+            Team 2984
+          </h1>
+        </div>
+        <div
+          className="mobile"
+          style={{
+            textAlign: "center",
+          }}
+        >
+          <img src={logo} height="72" alt="logo" style={{ margin: 0 }} />
+          <h1
+            css={[
+              {
+                verticalAlign: "middle",
+                lineHeight: "100px",
+                height: "100px",
+              },
+              css`
+                font-size: 64pt;
+              `,
+            ]}
+          >
+            Team 2984
+          </h1>
+        </div>
       </div>
     </div>
     <Container>
@@ -212,14 +270,14 @@ const ThirdPage = () => (
         <p>We rely on our sponsors for funding, allowing us to compete.</p>
         <LinkStyle>
           <Link to="/sponsors">
-            <Button display="inline-block" margin="0 5px 0 0">
+            <Button display="inline-block" margin="5px">
               See All Sponsors
             </Button>
           </Link>
         </LinkStyle>
         <LinkStyle>
           <Link to="/sponsors#become-a-sponsor">
-            <Button display="inline-block" margin="0 0 0 5px">
+            <Button display="inline-block" margin="5px">
               Become a Sponsor
             </Button>
           </Link>

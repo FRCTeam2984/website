@@ -3,6 +3,7 @@ a {
   text-decoration: none;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
 }

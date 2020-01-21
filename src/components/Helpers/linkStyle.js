@@ -8,7 +8,7 @@ export const LinkStyle = ({ children }) => (
   <span
     css={{
       color: colors.black,
-      transition: "color 0.2s ease-in-out",
+      transition: "color 0.2s ease-out",
       ":hover": {
         color: colors.red,
         cursor: "pointer",
@@ -24,7 +24,7 @@ export const TextLinkStyle = ({ children }) => (
   <span
     css={{
       color: colors.black,
-      transition: "color 0.2s ease-in-out",
+      transition: "color 0.2s ease-out",
       ":hover": {
         color: colors.red,
         cursor: "pointer",
