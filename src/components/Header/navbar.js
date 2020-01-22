@@ -17,7 +17,6 @@ export default class Navbar extends React.Component {
   toggleNavbar = e => {
     let isActive = this.state.active === "active" ? "" : "active"
     this.setState({ active: isActive })
-    console.log(this.state.active)
   }
 
   mobileCollapse = e => {

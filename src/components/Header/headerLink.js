@@ -2,7 +2,6 @@ import { Link } from "gatsby"
 import React from "react"
 import { colors } from "../theme"
 import { css } from "@emotion/core"
-import { FaHandMiddleFinger } from "react-icons/fa"
 
 const HeaderLink = ({ children, to }) => (
   <Link
@@ -29,7 +28,7 @@ const HeaderLink = ({ children, to }) => (
       css`
         @media (max-width: 992px) {
           height: auto;
-          border-top: 1px solid #dddddd;
+          border-top: 1px solid #e5e5e5;
           margin-left: 0px;
         }
       `,
