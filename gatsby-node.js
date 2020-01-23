@@ -4,9 +4,8 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-// You can delete this file if you're not using it
-
 const path = require(`path`)
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const markdownTemplate = path.resolve(`src/components/markdownTemplate.js`)

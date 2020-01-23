@@ -1,0 +1,10 @@
+main a {
+  color: #000000;
+  transition: color 0.2s ease-out;
+}
+
+main a:hover {
+  color: #ff1919;
+  cursor: pointer;
+  text-decoration: underline;
+}
