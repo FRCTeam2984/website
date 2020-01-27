@@ -1,6 +1,6 @@
 ---
 path: "/community"
-title: "Community Outreach"
+title: Community Outreach
 ---
 
 ## Volunteer Service

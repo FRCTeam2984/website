@@ -61,7 +61,7 @@ module.exports = {
               // base for generating different widths of each image.
               maxWidth: 1200,
               tracedSVG: true,
-              linkImagesToOriginal: false,
+              linkImagesToOriginal: true,
             },
           },
         ],

@@ -231,9 +231,7 @@ const ThirdPage = () => (
         </div>
         <LinkStyle>
           <Link to="/join">
-            <Button>
-              <p css={{ margin: "0" }}>Join Us</p>
-            </Button>
+            <Button>Join Us</Button>
           </Link>
         </LinkStyle>
       </div>
