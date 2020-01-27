@@ -13,7 +13,7 @@ In this lesson we will be covering just how to use the lathe. From using the chu
 
 There are quite a few ways to move the lathe, in this lesson I will outline them. To start out here is a diagram of all the knobs on the carriage.
 
-![Knobs](/images/courses/lathe/knobs.jpg)
+![Knobs](/images/resources/courses/lathe/knobs.jpg)
 
 - (A) **Carriage handwheel**: moves the carriage large distances along the lathe's length
 - (B) **Cross feed handwheel**: moves the tool in and out perpendicularly to the Carriage handwheel's motion
