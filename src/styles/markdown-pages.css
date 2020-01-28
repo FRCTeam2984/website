@@ -6,5 +6,4 @@ main a {
 main a:hover {
   color: #ff1919;
   cursor: pointer;
-  text-decoration: underline;
 }

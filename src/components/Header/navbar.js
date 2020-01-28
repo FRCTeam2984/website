@@ -153,7 +153,7 @@ export default class Navbar extends React.Component {
               onClick={this.mobileCollapse}
             >
               <HeaderLink to="/join">Join</HeaderLink>
-              <HeaderLink to="/page-2/">Blog</HeaderLink>
+              <HeaderLink to="/blog">Blog</HeaderLink>
               <HeaderLink to="/sponsors">Sponsors</HeaderLink>
               <HeaderLink to="/community">Outreach</HeaderLink>
               <HeaderLink to="/resources">Resources</HeaderLink>
