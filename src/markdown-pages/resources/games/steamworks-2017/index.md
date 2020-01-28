@@ -14,11 +14,11 @@ path: /resources/games/steamworks-2017/index
 
 Our focus that year was to make a robot that could easily get gears and deliver them to aircraft. We were able to load gears almost perfectly but in our attempts to get the gear up to the pilot we rarely were able to succeed.
 
-![Front View Thunderclap](/images/steamworks-2017/front-thunderclap.jpg)
+![Front View Thunderclap](../../../../images/resources/games/steamworks-2017/front-thunderclap.jpg)
 
 Sadly that year didn't go too well. We ended up last at the San Diego Regional, but we learned a lot for years to come.
 
-![Side View Thunderclap](/images/steamworks-2017/side-thunderclap.jpg)
+![Side View Thunderclap](../../../../images/resources/games/steamworks-2017/side-thunderclap.jpg)
 
 # Our Shortcomings
 

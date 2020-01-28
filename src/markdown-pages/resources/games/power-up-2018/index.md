@@ -7,7 +7,6 @@ path: /resources/games/power-up-2018/index
 
 - https://groups.google.com/forum/#!forum/team2984
 
-
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSNmMEJqCEOtwZax0CBJSClBVZaWKHHv5SNnNt9_Bfsua7nId42wbsjqY6NeLSjuziwlBU3or4tRtek/pub?embedded=true" style="border-width:0" width="100%" height="600" frameborder="0" ></iframe>
 
 # Official Documentation
@@ -21,7 +20,7 @@ path: /resources/games/power-up-2018/index
 
 This year we are focusing heavily on the quality of our Robot. Electrical and Software already have a great headstart on autonomous code. Mechanical is planning to have two kitbots, one for driving the other for the E/S team.
 
-![The Kitbot](/images/power-up-2018/the-kitbot.jpg)
+![The Kitbot](../../../../images/resources/games/power-up-2018/the-kitbot.jpg)
 
 Our plan is to make the most viable prototypes early on as to try and get the best strategy possible by the end of the season.
 
@@ -39,10 +38,10 @@ Our plan is to make the most viable prototypes early on as to try and get the be
 
 # Team Documentation
 
-- [Penalties](/games/power-up-2018/penalties/)
-- [Points Analysis](/games/power-up-2018/points-analysis/)
-- [Archetypes](/games/power-up-2018/archetypes/)
-- [Playbook](/games/power-up-2018/playbook/)
+- [Penalties](/resources/games/power-up-2018/penalties/)
+- [Points Analysis](/resources/games/power-up-2018/points-analysis/)
+- [Archetypes](/resources/games/power-up-2018/archetypes/)
+- [Playbook](/resources/games/power-up-2018/playbook/)
 - [2018 Onshape Robot](https://cad.onshape.com/documents/c25b6e33afa0deb23647eb4b/w/867857abf41225d617f9678b/e/dacda856b6b4e3c78fc22636)
 
 # Game Resources

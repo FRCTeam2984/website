@@ -3,7 +3,6 @@ path: /resources
 title: Resources
 ---
 
-
 ## Games
 
 - [Powerup 2018](/resources/games/power-up-2018/index)
@@ -21,7 +20,7 @@ title: Resources
 
 - [Lathe](/resources/courses/lathe/)
 - [Mill](/resources/courses/mill/)
-- [Wiring](/courses/wiring/)
+- [Wiring](/resources/courses/wiring/)
 - [Vision Tracking](/resources/courses/vision-tracking/)
 - [SolidWorks](/resources/courses/solidworks/)
 - [Basic Git](/resources/courses/git-basics/)
@@ -29,7 +28,6 @@ title: Resources
 - [Vikings Safety Guide](/resources/courses/safety-guide/)
 - [How to Order Shirts](/resources/courses/how-to-order-shirts/)
 - [Team 2984 Forum](https://groups.google.com/forum/#!forum/team2984)
-
 
 ## Third Party Documentation
 

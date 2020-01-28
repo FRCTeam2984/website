@@ -15,7 +15,7 @@ The robot for this year was meant to do the one thing that this competition focu
 
 We did one thing and we did it somewhat well. Another benefit was that we chose to do something that didn't conflict with many other robots thus we consistently scored points through the Qualifications which allowed us to be picked up by another high-scoring Alliance.
 
-![Frisbee Launcher](/images/ultimate-ascent-2013/frisbee-launcher.jpg)
+![Frisbee Launcher](../../../../images/resources/games/ultimate-ascent-2013/frisbee-launcher.jpg)
 
 Our robot could throw two frisbees during autonomous and then collect up to three frisbees to launch during teleop.
 

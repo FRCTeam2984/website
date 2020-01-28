@@ -2,17 +2,6 @@
 title: Team Handbook
 path: /resources/courses/team-manual
 ---
-# Table of Contents
-
-- [Introduction](#introduction)
-- [Requirements to join (During Preseason)](#requirements-to-join-during-preseason-)
-- [Requirements to join (During Season)](#requirements-to-join-during-season-)
-- [How to run a Team Meeting](#how-to-run-a-team-meeting)
-- [Attendance Policy](#attendance-policy)
-- [Responsibilities of Members](#responsibilities-of-members)
-- [Responsibilities of Teams](#responsibilities-of-teams)
-- [Responsibilities of a Team Lead](#responsibilities-of-a-team-lead)
-- [PDA and Relationships](#pda-and-relationships)
 
 # Introduction
 
@@ -20,14 +9,14 @@ The job of this handbook is to explain to you member, team lead even mentor how 
 
 # Requirements to join (During Preseason)
 
-The Preseason is a time to learn as much you can without the stress of the  competition deadline. The new members can be given attention without fear of falling behind on deadlines, thus this should be the only time the team accepts new members.
+The Preseason is a time to learn as much you can without the stress of the competition deadline. The new members can be given attention without fear of falling behind on deadlines, thus this should be the only time the team accepts new members.
 
 Students on the team should have the following:
 
 1.  A willingness to work hard
-2. A want to learn more
-3. To be 13 years of age or older
-4. Has to pass the Safety Test
+2.  A want to learn more
+3.  To be 13 years of age or older
+4.  Has to pass the Safety Test
 
 # Requirements to join (During Season)
 
@@ -69,7 +58,7 @@ A team member is meant to be present physically and mentally at every meeting. B
 1. Attendance - Less than 25% unexcused or 50% excused absences
 2. Consistency - Should be on the same team for the majority of season
 3. Learning - Should be willing to learn outside of meetings
-4. Behavior - Should behave in a way that is not violent, menacing or causes  any other member of robotics to feel uncomfortable
+4. Behavior - Should behave in a way that is not violent, menacing or causes any other member of robotics to feel uncomfortable
 
 # Responsibilities of Teams
 
@@ -80,8 +69,8 @@ Communications: Works with people outside the team and creates our brand
 3. Blog Makers
 4. Order T-shirts
 5. Organize with parents to get lunches on full day meetings and other Field Elements
-3. Build Chassis
-4. Fabricate Attachments to Robot
+6. Build Chassis
+7. Fabricate Attachments to Robot
 
 Logistics: Works with any budgeting or planning the team needs to make
 

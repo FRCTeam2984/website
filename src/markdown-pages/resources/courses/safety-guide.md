@@ -3,13 +3,6 @@ title: Safety Guidelines
 path: /resources/courses/safety-guide
 ---
 
-# Table of Contents
-
-- [Note to Team](#note-to-team)
-- [Attire](#attire)
-- [Machinery Etiquette](#machinery-etiquette)
-- [Member Etiquette](#member-etiquette)
-- [Conclusion](#conclusion)
 # Note to Team
 
 At no point should someone feel unsafe or in danger of being in bodily harm. If someone were to feel this way they should immediately tell a mentor or a team lead so they can stop the problem from escalating.
@@ -34,9 +27,9 @@ When someone is operating a machine it is best to avoid moving them or making lo
 
 Mentors and team leads should naturally be responsible and uphold the culture of safety. Remember you are the people who make sure kids don't stab each other or themselves, that's an important job!
 
-Members should always be nice to each other and never engage in 1 on 1 combat unless flails are incorporated*.
+Members should always be nice to each other and never engage in 1 on 1 combat unless flails are incorporated\*.
 
-* Even if flails are incorporated nobody is allowed to fight in or near the Robotics room
+- Even if flails are incorporated nobody is allowed to fight in or near the Robotics room
 
 # Conclusion
 
