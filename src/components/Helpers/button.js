@@ -7,7 +7,7 @@ const Button = ({ children, display, margin }) => (
       padding: "0.25em 0.5em",
       borderWidth: "1px",
       borderStyle: "solid",
-      display: display || "block",
+      display: display || "inline-block",
       margin: margin || "0",
     }}
   >

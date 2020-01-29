@@ -79,8 +79,8 @@ const ThirdPage = () => (
         <LightBlueWave />
       </SVGWrapper>
       <SVGWrapper
-        left="min(calc(35vw), calc(50vw - 150px))"
-        bottom="max(calc(30% - 150px), 13%)"
+        left="calc(35vw)"
+        bottom="calc(30% - 140px)"
         zIndex="3"
         scrollFactor="-0.15"
         width="35%"
