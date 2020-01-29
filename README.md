@@ -1,8 +1,16 @@
+# Team 2984 Website
+
+
+
 # Develop
 
 1. Clone this repository
 2. `npm install`
 3. `gatsby develop`
+
+# Deploy
+
+1. `npm run deploy`
 
 # How to add new animations
 
