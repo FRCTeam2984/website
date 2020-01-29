@@ -16,4 +16,4 @@ Electrical is currently attempting to determine if the intake will function at o
 
 Drive team is throwing tangerines at each other, likely a contributing factor to the mouse problem, as well as threatening each other with a bible, where they got a bible we don't know, they are the special team for a reason.
 
-![Peeps at Work](/images/201924/peeps.jpg)
+![Peeps at Work](./images/20190204/peeps.jpg)

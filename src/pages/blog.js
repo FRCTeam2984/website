@@ -36,7 +36,7 @@ export const pageQuery = graphql`
             title
             subtitle
           }
-          excerpt(pruneLength: 200)
+          excerpt(pruneLength: 250)
         }
       }
     }

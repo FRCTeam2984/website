@@ -24,4 +24,4 @@ Drive team is only one member today so Tabatha is just helping people.
 
 Last week was saying Hello to the new recruits and making the new room work. were all excited for another mazing season in robotics.
 
-![New Crib](/images/20180915/newdigs.jpg)
+![New Crib](./images/20180915/newdigs.jpg)

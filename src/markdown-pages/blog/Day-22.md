@@ -15,11 +15,6 @@ Rain has happened today, this has caused a mild craze with both a lamp post and 
 
 With the end of the build season fast approaching, the sense of comradery between us all has grown, and while the end may be near these experiences will last a lifetime.
 
-
-
-
-
-
-![Monika Struggles](/images/201922/monikaStruggles.jpg)
-![The Bot](/images/201922/theBot.jpg)
-![Monika Struggles](/images/201922/lampostDown.jpg)
+![Monika Struggles](./images/20190202/monikaStruggles.jpg)
+![The Bot](./images/20190202/theBot.jpg)
+![Monika Struggles](./images/20190202/lampostDown.jpg)

@@ -28,4 +28,4 @@ Comms is doing fund raising and blog writing and just kinda collecting informati
 
 Join us on discord <a href="https://discordapp.com/invite/RshDdxa">here</a>
 
-![Eric Xiao](/images/20180915/ThingAMABob.PNG)
+![Eric Xiao](./images/20180915/ThingAMABob.PNG)
