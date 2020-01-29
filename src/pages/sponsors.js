@@ -192,7 +192,7 @@ const Sponsors = () => (
           </p>
           <Button>
             La Jolla High School<br></br>
-            Attn: Dick Fatcock<br></br>
+            Attn: Richard Babcock<br></br>
             750 Nautilus St.<br></br>
             La Jolla, CA 92037
           </Button>
