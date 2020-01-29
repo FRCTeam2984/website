@@ -2,8 +2,7 @@ module.exports = {
   pathPrefix: "/roboticsWebsite/",
   siteMetadata: {
     title: `Vikings Robotics`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Team 2984 - Vikings Robotics`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -1,81 +1,175 @@
 # Team 2984 Website
+This site is built with [Gatsby](https://www.gatsbyjs.org/), a static site generator for [React](https://reactjs.org/).
+
+# Contributing
+First, you'll need to install:
+- [Git](https://git-scm.com/) for revision control;
+- [Node.js](https://nodejs.org/en/) for language support;
+- [VS Code](https://code.visualstudio.com/) or another text editor with syntax highlighting
+
+Then:
+1. Use the terminal to clone this repository
+  This command will typically look like this:
+```bash
+git clone git@github.com:{username}/roboticsWebsite.git
+```
+2. Change into the project directory:
+
+```bash
+cd roboticsWebsite
+```
+3. Install dependencies: 
+```bash
+npm install
+```
+4. Open Atom and begin editing:
+```bash
+code .
+```
+
+5. When done with making changes, commit them:
+```bash
+git add .
+git commit -m {message}
+```
 
 
+6. Then, push to your own GitHub repository:
+
+```bash
+git push origin master
+```
+7. Finally, create a pull request by clicking the "New pull request" button on the [team's GitHub repo](https://github.com/FRCTeam2984/website).
+  
+After awhile, the team repo and your own will diverge. Update your local repository as follows.
+
+First, add the team's repo as a remote:
+
+```bash
+# be sure you're in the website working directory!
+git remote add team https://github.com/FRCTeam2984/website.git
+```
+
+Next, merge changes onto a newly-created branch.
+
+```bash
+# create a branch and check it out
+git checkout -b upstream
+
+# pull changes
+git pull team master
+
+# You may need to handle merge conflicts
+
+# checkout master
+git checkout master
+
+# merge changes
+git merge upstream
+
+# delete branch
+git branch -d upstream
+```
+
+# Deploy
+1. In `gatsby-config.js`, edit the `pathPrefix` to what you want (delete it if you want to serve it from the root of the domain).
+2. Deploy it using `gh-pages`:
+```bash
+npm run deploy
+```
 
 # Develop
 
-1. Clone this repository
-2. `npm install`
-3. `gatsby develop`
+## Running the Local Development Server
+```bash
+gatsby develop
+```
+The site will be hosted at `localhost:8000/`.
 
-# Deploy
+## Creating a New Blog Post
+1. Create a file called `src/markdown-pages/blog/{post}.md`.
+2. Front matter goes at the top of the file. Minimally, it should include: `title`, `date`, `path`, and `author` fields. The post will be available at whatever path is set in the frontmatter. For example, if you set `path` to:
+```markdown
+path: /blog/post
+```
+the post will be available at the path `/blog/post`.  
+3. (Optional) Add images to `src/markdown-pages/blog/images/{date}/{image-name}`. Then, reference them in your markdown file using a relative reference. For example:
+```markdown
+[Image name](./images/{date}/{image-name})
+```
 
-1. `npm run deploy`
+[Here's](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) a nice markdown reference sheet.
 
-# How to add new animations
+Here's an example post:
+```markdown
+---
+title: Hello, World!
+date: 2018-01-06 08:00:00
+author: John Smith
+path: /blog/hello-world
+---
 
-1. Use [bodymovin](https://github.com/airbnb/lottie-web) to export your after effects animation. (You should have an `your-animation-name.json` file and a folder called `images`)
-2. Move the images inside the `images` folder into the `static/images/animations/your-animation-name` folder (create the folder)
-3. Move the `your-animation-name.json` to the `assets` folder
-4. Inside `your-animation-name.json` each time there is a `"u":` change it to `"u": "/images/animations/your-animation-name/"`  
-   (eg. `"u": "images/"` -> `"u": "/images/animations/first/"`)
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+Here is a robot image:
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+![2016 Robot](./images/20180106/2016Robot.jpg)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Here is a bulleted list:
 
-## 🚀 Quick start
+- one
+- two
+- buckle my shoe
+- *italic*
+- **bold**
+- [a link](https://www.firstinspires.org/robotics/frc)
+- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco ...
 
-1.  **Create a Gatsby site.**
+# This is an H1 Heading
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+## This in an H2 Heading
 
-1.  **Start developing.**
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+```
 
-    Navigate into your new site’s directory and start it up.
+## Create a New Markdown Page (non-blog)
+1. Create a markdown file in the `src/markdown-pages/` directory.
+2. Front matter goes at the top of the file. It should only include: `title` and `path` fields. The post will be available at whatever path is set in the frontmatter. 
+3. (Optional) Add images to `src/images}`. Then, reference them in your markdown file using a relative reference (it might get ugly if you are in a nested directory). 
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+For example, if you want to create a new page at the `/resources/new-page`, then create a markdown file called `src/markdown-pages/resources/new-page.md`.  
+Then, in the frontmatter, add:
+```markdown
+---
+title: New Page
+path: /resources/new-page
+---
+```
+If you add an image, let's say it's called `sample-image.png`, put it at `src/images/sample-image.png`. Then, reference it using: 
+```markdown
+[Sample Image](../../images/resources/sample-image.png)
+```
 
 ## 🧐 What's inside?
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+A quick look at the important files and directories you'll see in this project.
 
     .
     ├── node_modules
     ├── src
+      ├── components
+      ├── images
+      ├── markdown-pages
+      ├── pages
+      ├── styles
+    ├── static
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
     ├── gatsby-config.js
     ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
     ├── package-lock.json
     ├── package.json
     └── README.md
@@ -84,36 +178,38 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+3.  **`/src/components`**: Contains all of the react components (eg. navbar, footer, layouts). Also contains the base layouts for all of the pages.
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+4.  **`/src/markdown-pages`**: Contains all of the markdown pages.
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+5.  **`/src/pages`**: Contains all of the gatsby pages. *Note: These will override markdown pages if they both have the same name.*
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+6.  **`/src/styles`**: Contains the global css for the site. *Note: Any css file here will have its styles applied to all pages.*
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+7.  **`/static`**: Contains all static files that do not need preprocessing (eg. pdfs). These files will automatically be copied to the `/public` directory during build. *Note: Do not put images here, they will **not** be automatically compressed and efficiently served by Gatsby.* 
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+8.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+9.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+10. **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+11. **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail). 
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+12. **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process. This file is used for converting markdown files into pages.
 
-## 🎓 Learning Gatsby
+13. **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+14. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+15. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+16. **`README.md`**: This file.
 
-## 💫 Deploy
+# How to add new animations
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+1. Use [bodymovin](https://github.com/airbnb/lottie-web) to export your after effects animation. (You should have an `your-animation-name.json` file and a folder called `images`)
+2. Move the images inside the `images` folder into the `static/images/animations/your-animation-name` folder (create the folder)
+3. Move the `your-animation-name.json` to the `assets` folder
+4. Inside `your-animation-name.json` each time there is a `"u":` change it to `"u": "/images/animations/your-animation-name/"`  
+   (eg. `"u": "images/"` -> `"u": "/images/animations/first/"`)
