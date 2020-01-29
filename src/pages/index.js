@@ -80,7 +80,7 @@ const ThirdPage = () => (
       </SVGWrapper>
       <SVGWrapper
         left="calc(35vw)"
-        bottom="calc(30% - 140px)"
+        bottom="calc(30% - 125px)"
         zIndex="3"
         scrollFactor="-0.15"
         width="35%"
