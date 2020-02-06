@@ -5,6 +5,7 @@ import Navbar from "./Header/navbar"
 import Footer from "./Footer/footer"
 import SEO from "./seo"
 import { Global, css } from "@emotion/core"
+import { colors } from "./theme"
 
 export default function BlogTemplate({
   data, // this prop will be injected by the GraphQL query below.
@@ -16,12 +17,12 @@ export default function BlogTemplate({
       <Global
         styles={css`
           main a {
-            color: #000000;
-            transition: color 0.2s ease-out;
+            color: ${colors.red};
+            transition: color 0.1s ease-out;
           }
 
           main a:hover {
-            color: #ff1919;
+            color: ${colors.darkred};
             cursor: pointer;
             text-decoration: underline;
           }

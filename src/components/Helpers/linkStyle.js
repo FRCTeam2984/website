@@ -23,10 +23,10 @@ export const LinkStyle = ({ children }) => (
 export const TextLinkStyle = ({ children }) => (
   <span
     css={{
-      color: colors.black,
-      transition: "color 0.2s ease-out",
+      color: colors.red,
+      transition: "color 0.1s ease-out",
       ":hover": {
-        color: colors.red,
+        color: colors.darkred,
         cursor: "pointer",
         textDecoration: "underline",
       },
