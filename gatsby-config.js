@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/roboticsWebsite/",
   siteMetadata: {
     title: `Vikings Robotics`,
     description: `Team 2984 - Vikings Robotics`,
