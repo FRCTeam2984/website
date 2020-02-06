@@ -182,7 +182,7 @@ A quick look at the important files and directories you'll see in this project.
 
 4.  **`/src/markdown-pages`**: Contains all of the markdown pages.
 
-5.  **`/src/pages`**: Contains all of the gatsby pages. *Note: These will override markdown pages if they both have the same name.*
+5.  **`/src/pages`**: Contains all of the gatsby pages. *Note: These will override markdown pages if they both are at the same path.*
 
 6.  **`/src/styles`**: Contains the global css for the site. *Note: Any css file here will have its styles applied to all pages.*
 
