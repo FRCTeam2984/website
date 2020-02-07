@@ -22,7 +22,7 @@ cd roboticsWebsite
 ```bash
 npm install
 ```
-4. Open Atom and begin editing:
+4. Open VSCode and begin editing:
 ```bash
 code .
 ```
@@ -70,13 +70,7 @@ git merge upstream
 # delete branch
 git branch -d upstream
 ```
-
-# Deploy
-1. In `gatsby-config.js`, edit the `pathPrefix` to what you want (delete it if you want to serve it from the root of the domain).
-2. Deploy it using `gh-pages`:
-```bash
-npm run deploy
-```
+The website will be automatically deployed after a change to the repository. Click on the `Actions` tab to see the status of the deployment.
 
 # Develop
 
