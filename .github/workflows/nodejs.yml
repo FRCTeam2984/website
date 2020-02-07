@@ -21,7 +21,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install
-    - run: npm run build
+    - run: gatsby clean
+    - run: gatsby build
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
