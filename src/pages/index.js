@@ -62,7 +62,7 @@ const ThirdPage = () => (
     >
       <SVGWrapper
         left="-7%"
-        top="70%"
+        top="70vh"
         zIndex="1"
         scrollFactor="0.05"
         maxHeight="30%"
@@ -71,28 +71,28 @@ const ThirdPage = () => (
       </SVGWrapper>
       <SVGWrapper
         left="-10%"
-        top="calc(70% + 30px)"
-        maxHeight="calc(30% - 30px)"
+        top="calc(70vh + 30px)"
+        maxHeight="calc(30vh - 30px)"
         zIndex="2"
         scrollFactor="0"
       >
         <LightBlueWave />
       </SVGWrapper>
       <SVGWrapper
-        left="calc(35vw)"
-        bottom="calc(30% - 125px)"
+        left="calc(40vw - 80px)"
+        top="calc(70% - 18vw + 75px)"
         zIndex="3"
         scrollFactor="-0.15"
-        width="35%"
-        minWidth="300px"
+        width="35vw"
+        minWidth="250px"
       >
         <Boat />
       </SVGWrapper>
       <SVGWrapper
         left="-12%"
-        top="calc(70% + 60px)"
+        top="calc(70vh + 60px)"
         width="4800px"
-        height="calc(30% - 60px)"
+        height="calc(30vh - 60px)"
         zIndex="4"
         scrollFactor="-0.05"
       >
