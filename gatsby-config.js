@@ -38,6 +38,14 @@ module.exports = {
       options: {
         rule: {
           include: /images/,
+          omitKeys: [
+            "xmlnsDc",
+            "xmlnsCc",
+            "xmlnsRdf",
+            "xmlnsSvg",
+            "xmlnsSodipodi",
+            "xmlnsInkscape",
+          ],
         },
       },
     },

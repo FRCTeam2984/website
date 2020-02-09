@@ -17,7 +17,7 @@ import Wowee from "../images/sponsors/Wowee.svg"
 import Qualcomm from "../images/sponsors/Qualcomm.svg"
 import LockheedMartin from "../images/sponsors/LockheedMartin.svg"
 import Verance from "../images/sponsors/Verance.svg"
-import CopyCove from "../images/sponsors/CopyCove.svg"
+import PerkinsCoie from "../images/sponsors/PerkinsCoie.svg"
 
 import Container from "../components/container"
 import Button from "../components/Helpers/button"
@@ -176,11 +176,11 @@ const ThirdPage = () => (
         <h1>Our Team</h1>
         <div className="row">
           <div className="col-6 col-md-3">
-            <h1 css={{ color: colors.red }}>20</h1>
+            <h1 css={{ color: colors.red }}>25</h1>
             <h3>Members</h3>
           </div>
           <div className="col-6 col-md-3">
-            <h1 css={{ color: colors.red }}>2</h1>
+            <h1 css={{ color: colors.red }}>5</h1>
             <h3>Mentors</h3>
           </div>
           <div className="col-6 col-md-3">
@@ -303,7 +303,7 @@ const ThirdPage = () => (
             <Verance />
           </div>
           <div className="col">
-            <CopyCove />
+            <PerkinsCoie />
           </div>
         </div>
       </div>

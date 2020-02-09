@@ -4,20 +4,23 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import SponsorWrapper from "../components/Helpers/sponsorWrapper"
+
+import Bayer from "../images/sponsors/Bayer.svg"
+import LockheedMartin from "../images/sponsors/LockheedMartin.svg"
+import PerkinsCoie from "../images/sponsors/PerkinsCoie.svg"
+import QFS from "../images/sponsors/QFS.svg"
+import Qualcomm from "../images/sponsors/Qualcomm.svg"
+import Verance from "../images/sponsors/Verance.svg"
+import Wowee from "../images/sponsors/Wowee.svg"
+
 import AceHardware from "../images/sponsors/AceHardware.svg"
 import CopyCove from "../images/sponsors/CopyCove.svg"
 import DiniGroup from "../images/sponsors/DiniGroup.svg"
 import Kiwanis from "../images/sponsors/Kiwanis.svg"
-import LockheedMartin from "../images/sponsors/LockheedMartin.svg"
 import Monsanto from "../images/sponsors/Monsanto.svg"
 import Perkins from "../images/sponsors/Perkins.svg"
-import PerkinsCoie from "../images/sponsors/PerkinsCoie.svg"
-import QFS from "../images/sponsors/QFS.svg"
-import Qualcomm from "../images/sponsors/Qualcomm.svg"
 import SolidWorks from "../images/sponsors/SolidWorks.svg"
 import Sperr from "../images/sponsors/Sperr.svg"
-import Verance from "../images/sponsors/Verance.svg"
-import Wowee from "../images/sponsors/Wowee.svg"
 import Xerox from "../images/sponsors/Xerox.svg"
 
 import Button from "../components/Helpers/button"
@@ -46,42 +49,15 @@ const Sponsors = () => (
         </Link>
       </LinkStyle>
       <p css={{ fontSize: "1.2em" }}>Thank you for your support!</p>
-      <div class="row">
+      <div class="row align-items-center">
         <div className="col-6 col-md-4">
-          <SponsorWrapper href="https://www.acehardware.com/">
-            <AceHardware />
-          </SponsorWrapper>
-        </div>
-        <div className="col-6 col-md-4">
-          <SponsorWrapper href="https://www.copycove.com/">
-            <CopyCove />
-          </SponsorWrapper>
-        </div>
-        <div className="col-6 col-md-4">
-          <SponsorWrapper href="https://www.dinigroup.com/">
-            <DiniGroup />
-          </SponsorWrapper>
-        </div>
-
-        <div className="col-6 col-md-4">
-          <SponsorWrapper href="https://www.kiwanis.org/">
-            <Kiwanis />
+          <SponsorWrapper href="https://www.bayer.com/">
+            <Bayer />
           </SponsorWrapper>
         </div>
         <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.lockheedmartin.com/">
             <LockheedMartin />
-          </SponsorWrapper>
-        </div>
-        <div className="col-6 col-md-4">
-          <SponsorWrapper href="https://monsanto.com/">
-            <Monsanto />
-          </SponsorWrapper>
-        </div>
-
-        <div className="col-6 col-md-4">
-          <SponsorWrapper href="https://www.perkins.com/">
-            <Perkins />
           </SponsorWrapper>
         </div>
         <div className="col-6 col-md-4">
@@ -100,16 +76,6 @@ const Sponsors = () => (
           </SponsorWrapper>
         </div>
         <div className="col-6 col-md-4">
-          <SponsorWrapper href="https://www.solidworks.com/">
-            <SolidWorks />
-          </SponsorWrapper>
-        </div>
-        <div className="col-6 col-md-4">
-          <SponsorWrapper>
-            <Sperr />
-          </SponsorWrapper>
-        </div>
-        <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.verance.com/">
             <Verance />
           </SponsorWrapper>
@@ -119,7 +85,57 @@ const Sponsors = () => (
             <Wowee />
           </SponsorWrapper>
         </div>
-        <div className="col-6 col-md-4">
+      </div>
+      <h1 css={{ marginTop: "75px", marginBottom: "25px", textAlign: "left" }}>
+        Past Sponsors
+      </h1>
+      <div class="row align-items-center">
+        <div className="col-4 col-md-3">
+          <SponsorWrapper href="https://www.acehardware.com/">
+            <AceHardware />
+          </SponsorWrapper>
+        </div>
+        <div className="col-4 col-md-3">
+          <SponsorWrapper href="https://www.copycove.com/">
+            <CopyCove />
+          </SponsorWrapper>
+        </div>
+        <div className="col-4 col-md-3">
+          <SponsorWrapper href="https://www.dinigroup.com/">
+            <DiniGroup />
+          </SponsorWrapper>
+        </div>
+
+        <div className="col-4 col-md-3">
+          <SponsorWrapper href="https://www.kiwanis.org/">
+            <Kiwanis />
+          </SponsorWrapper>
+        </div>
+
+        <div className="col-4 col-md-3">
+          <SponsorWrapper href="https://monsanto.com/">
+            <Monsanto />
+          </SponsorWrapper>
+        </div>
+
+        <div className="col-4 col-md-3">
+          <SponsorWrapper href="https://www.perkins.com/">
+            <Perkins />
+          </SponsorWrapper>
+        </div>
+
+        <div className="col-4 col-md-3">
+          <SponsorWrapper href="https://www.solidworks.com/">
+            <SolidWorks />
+          </SponsorWrapper>
+        </div>
+        <div className="col-4 col-md-3">
+          <SponsorWrapper>
+            <Sperr />
+          </SponsorWrapper>
+        </div>
+
+        <div className="col-4 col-md-3">
           <SponsorWrapper href="https://www.xerox.com/">
             <Xerox />
           </SponsorWrapper>
@@ -210,11 +226,11 @@ const Sponsors = () => (
             Your logo will be added to the list of our corporate sponsors.
             <br></br>
             Please contact us for more information at{" "}
-            <LinkStyle>
+            <TextLinkStyle>
               <a href="mailto:ljhsvikingrobotics@gmail.com">
                 ljhsvikingrobotics@gmail.com
               </a>
-            </LinkStyle>
+            </TextLinkStyle>
           </p>
         </div>
       </div>
