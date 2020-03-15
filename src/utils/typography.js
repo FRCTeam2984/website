@@ -11,7 +11,7 @@ const typography = new Typography({
     },
     {
       name: "Source Sans Pro",
-      styles: ["400", "400i", "600", "600i"],
+      styles: ["400", "400i", "700", "700i"],
     },
   ],
 })

@@ -2,9 +2,11 @@
 title: How to order Shirts
 path: /resources/courses/how-to-order-shirts
 ---
+
 Ordering the shirts will require time and effort. The people who start this process should be the same people who end this process.
 
 1. Create design
+
 - Announce that there will be shirts (At a Meeting and through Email)
 - Estimate how much each shirt will cost. Ask people at a Saturday meeting if they will buy a shirt. Estimate a price using https://www.customink.com/quotes
 - Announce the estimated shirt price
@@ -13,7 +15,8 @@ Ordering the shirts will require time and effort. The people who start this proc
 - Give Dana Irwin the money. Order the shirts with Dana Irwin
 - Bring the box of shirts to Robotics and distribute the shirts
 
-SIDE NOTES
+**SIDE NOTES**
+
 - Mentors get free shirts
 
 - Order them at least 2 weeks before Season so you can have them on Kickoff
