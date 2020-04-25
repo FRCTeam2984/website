@@ -61,40 +61,49 @@ const ThirdPage = () => (
       ]}
     >
       <SVGWrapper
-        left="-7%"
-        top="70vh"
-        zIndex="1"
+        styles={{
+          left: "-180px",
+          top: "70vh",
+          zIndex: "1",
+          maxHeight: "30%",
+        }}
         scrollFactor="0.05"
-        maxHeight="30%"
       >
         <BlueWave />
       </SVGWrapper>
       <SVGWrapper
-        left="-10%"
-        top="calc(70vh + 30px)"
-        maxHeight="calc(30vh - 30px)"
-        zIndex="2"
+        styles={{
+          left: "-250px",
+          top: "calc(70vh + 30px)",
+          maxHeight: "calc(30vh - 30px)",
+          zIndex: "2",
+        }}
         scrollFactor="0"
       >
         <LightBlueWave />
       </SVGWrapper>
       <SVGWrapper
-        left="calc(40vw - 80px)"
-        top="calc(70% - 18vw + 75px)"
-        zIndex="3"
+        styles={{
+          marginLeft: "calc(-140px - 9vw)",
+          left: "50%",
+          bottom: "calc(30vh - 110px - 0.5vw)",
+          // top="calc(70% - 18vw + 75px)"
+          zIndex: "3",
+          width: "calc(280px + 18vw)",
+        }}
         scrollFactor="-0.15"
-        width="35vw"
-        minWidth="250px"
       >
         <Boat />
       </SVGWrapper>
       <SVGWrapper
-        left="-12%"
-        top="calc(70vh + 60px)"
-        width="4800px"
-        height="calc(30vh - 60px)"
-        zIndex="4"
-        scrollFactor="-0.05"
+        styles={{
+          left: "-300px",
+          top: "calc(70vh + 60px)",
+          width: "4800px",
+          height: "calc(30vh - 60px)",
+          zIndex: "4",
+          scrollFactor: "-0.05",
+        }}
       >
         <DarkBlueWave />
       </SVGWrapper>

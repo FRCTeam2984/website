@@ -18,13 +18,13 @@ title: Resources
 
 ## 2984 Documentation
 
+- [Team Handbook](pdfs/team-handbook.pdf)
 - [Lathe](/resources/courses/lathe/)
 - [Mill](/resources/courses/mill/)
 - [Wiring](/resources/courses/wiring/)
 - [Vision Tracking](/resources/courses/vision-tracking/)
 - [SolidWorks](/resources/courses/solidworks/)
 - [Basic Git](/resources/courses/git-basics/)
-- [Vikings Team Manual](/resources/courses/team-manual/)
 - [Vikings Safety Guide](/resources/courses/safety-guide/)
 - [How to Order Shirts](/resources/courses/how-to-order-shirts/)
 - [Team 2984 Forum](https://groups.google.com/forum/#!forum/team2984)
