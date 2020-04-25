@@ -86,7 +86,7 @@ const ThirdPage = () => (
         styles={{
           marginLeft: "calc(-140px - 9vw)",
           left: "50%",
-          bottom: "calc(30vh - 110px - 0.5vw)",
+          top: "calc(70vh - 75px - 9vw)",
           // top="calc(70% - 18vw + 75px)"
           zIndex: "3",
           width: "calc(280px + 18vw)",
@@ -102,8 +102,8 @@ const ThirdPage = () => (
           width: "4800px",
           height: "calc(30vh - 60px)",
           zIndex: "4",
-          scrollFactor: "-0.05",
         }}
+        scrollFactor="-0.05"
       >
         <DarkBlueWave />
       </SVGWrapper>
