@@ -8,7 +8,7 @@ const HeaderLink = ({ children, to }) => (
     to={to}
     activeStyle={{
       color: colors.red,
-      boxShadow: "0px 3px " + colors.red,
+      // boxShadow: "0px 3px " + colors.red,
     }}
     activeClassName="active"
     //css instead of style to get :hover to work (uses glamor plugin)

@@ -27,7 +27,7 @@ export default class LottieAnimation extends React.Component {
         function() {
           this.setState({ playingState: "playing" })
         }.bind(this),
-        500
+        100
       )
     }
   }

@@ -1,12 +1,6 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
+import { Helmet } from "react-helmet"
 
 import Navbar from "./Header/navbar"
 import Footer from "./Footer/footer"
@@ -15,6 +9,12 @@ import Container from "./container"
 const Layout = ({ children }) => {
   return (
     <>
+      <Helmet defer={false}>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=yes"
+        />
+      </Helmet>
       <Navbar />
       <Container>
         <main

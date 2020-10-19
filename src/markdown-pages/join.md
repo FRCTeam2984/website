@@ -3,16 +3,16 @@ path: "/join"
 title: Join Our Team
 ---
 
-Please fill out the 3 forms below and complete the safety test.
-Refer to the team handbook for more information.
+Please fill out the forms below and complete the safety test.
+Refer to the team handbook and safety manual for more information.
 
-- [Team Handbook](pdfs/team-handbook.pdf)
+- [Team Handbook](/pdfs/team-handbook.pdf)
+- [Safety Manual](/pdfs/safety-manual.pdf)
 
 ### Forms
 
-- [Sign Up Form](https://goo.gl/forms/SaWoLMADZkbF0iLp1)
-- [Emergency Contact Form](pdfs/join/emergency-contact-form.pdf)
-- [Parental Agreement Form](pdfs/join/parental-agreement-form.pdf)
+- [Sign Up Form](https://forms.gle/ZyUBCVPvz9tsZ9Jn6)
+- [Parental Agreement Form](/pdfs/join/parental-agreement-form.pdf)
 
 ### Safety Test
 

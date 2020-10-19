@@ -30,11 +30,7 @@ export default class Navbar extends React.Component {
       <header
         style={{
           backgroundColor: colors.lightlightgray,
-          border: "1px solid " + colors.lightgray,
-          borderTopStyle: "none",
-          borderRightStyle: "none",
-          borderBottomStyle: "solid",
-          borderLeftStyle: "none",
+          borderBottom: "1px solid " + colors.lightgray,
           position: "fixed",
           zIndex: 100,
           width: "100%",

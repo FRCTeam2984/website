@@ -3,6 +3,18 @@ path: /resources
 title: Resources
 ---
 
+## 2984 Documentation
+
+- [Team Handbook](/pdfs/team-handbook.pdf)
+- [Safety Manual](/pdfs/safety-manual.pdf)
+- [Lathe](/resources/courses/lathe/)
+- [Mill](/resources/courses/mill/)
+- [Wiring](/resources/courses/wiring/)
+- [Vision Tracking](/resources/courses/vision-tracking/)
+- [SolidWorks](/resources/courses/solidworks/)
+- [Basic Git](/resources/courses/git-basics/)
+- [How to Order Shirts](/resources/courses/how-to-order-shirts/)
+
 ## Games
 
 - [Powerup 2018](/resources/games/power-up-2018/index)
@@ -15,19 +27,6 @@ title: Resources
 - [Logomotion 2011](/resources/games/logomotion-2011/index)
 - [Breakaway 2010](/resources/games/breakaway-2010/index)
 - [Lunacy 2009](/resources/games/lunacy-2009/index)
-
-## 2984 Documentation
-
-- [Team Handbook](pdfs/team-handbook.pdf)
-- [Lathe](/resources/courses/lathe/)
-- [Mill](/resources/courses/mill/)
-- [Wiring](/resources/courses/wiring/)
-- [Vision Tracking](/resources/courses/vision-tracking/)
-- [SolidWorks](/resources/courses/solidworks/)
-- [Basic Git](/resources/courses/git-basics/)
-- [Vikings Safety Guide](/resources/courses/safety-guide/)
-- [How to Order Shirts](/resources/courses/how-to-order-shirts/)
-- [Team 2984 Forum](https://groups.google.com/forum/#!forum/team2984)
 
 ## Third Party Documentation
 
