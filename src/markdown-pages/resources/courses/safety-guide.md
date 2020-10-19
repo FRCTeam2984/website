@@ -3,6 +3,8 @@ title: Safety Guidelines
 path: /resources/courses/safety-guide
 ---
 
+> The content on this page may be out of date. Visit the new safety manual [here](/pdfs/safety-manual.pdf).
+
 # Note to Team
 
 At no point should someone feel unsafe or in danger of being in bodily harm. If someone were to feel this way they should immediately tell a mentor or a team lead so they can stop the problem from escalating.
