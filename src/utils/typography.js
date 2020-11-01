@@ -1,7 +1,8 @@
 import Typography from "typography"
 const typography = new Typography({
-  baseFontSize: "17px",
+  baseFontSize: "18px",
   baseLineHeight: 1.5,
+  scaleRatio: 2,
   headerFontFamily: ["Titillium Web", "Segoe UI", "Arial", "sans-serif"],
   bodyFontFamily: ["Source Sans Pro", "sans-serif"],
   googleFonts: [

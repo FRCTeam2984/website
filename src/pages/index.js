@@ -249,7 +249,6 @@ const ThirdPage = () => (
           <h1>FIRST Robotics Competition</h1>
           <p
             css={{
-              paddingRight: "25px",
               textAlign: "justify",
             }}
           >

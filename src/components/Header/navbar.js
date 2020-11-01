@@ -92,8 +92,7 @@ export default class Navbar extends React.Component {
                     <span
                       css={css`
                         margin-left: 10px;
-                        font-size: 24pt;
-                        font-weight: 600;
+                        font-size: 26pt;
                         @media (max-width: 475px) {
                           display: none;
                         }
