@@ -1,13 +1,13 @@
 import Typography from "typography"
 const typography = new Typography({
-  baseFontSize: "19px",
+  baseFontSize: "17px",
   baseLineHeight: 1.5,
-  headerFontFamily: ["Oxygen", "Segoe UI", "Arial", "sans-serif"],
+  headerFontFamily: ["Titillium Web", "Segoe UI", "Arial", "sans-serif"],
   bodyFontFamily: ["Source Sans Pro", "sans-serif"],
   googleFonts: [
     {
-      name: "Oxygen",
-      styles: ["400", "700"],
+      name: "Titillium Web",
+      styles: ["400", "600"],
     },
     {
       name: "Source Sans Pro",
