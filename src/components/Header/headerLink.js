@@ -40,7 +40,7 @@ const HeaderLink = ({ children, to }) => (
         padding-top: 20px;
         padding-bottom: auto;
         font-weight: 500;
-        font-size: 13.5pt;
+        font-size: 15pt;
         @media (max-width: 992px) {
           margin-bottom: 20px;
         }

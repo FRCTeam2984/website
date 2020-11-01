@@ -246,17 +246,16 @@ const ThirdPage = () => (
       </div>
       <div className="row" css={{ marginTop: "50px" }}>
         <div className="col-12 col-md-6 col-lg-8">
-          <h1>First Robotics Competition</h1>
+          <h1>FIRST Robotics Competition</h1>
           <p
             css={{
-              paddingRight: "25px",
               textAlign: "justify",
             }}
           >
             Every year we participate in the{" "}
             <TextLinkStyle>
               <a href="https://www.firstinspires.org/robotics/frc">
-                First Robotics Competition
+                FIRST Robotics Competition
               </a>
             </TextLinkStyle>
             , in which teams have 6 weeks to design and build a robot that
@@ -264,6 +263,23 @@ const ThirdPage = () => (
             attend regional competitions with teams from around the world in San
             Diego. At the 2018 San Diego Regional, we competed with teams from
             Chile, Denmark, Netherlands and Brazil.
+          </p>
+          <h1>FIRST Tech Challenge</h1>
+          <p
+            css={{
+              textAlign: "justify",
+            }}
+          >
+            This year we are competing in the {" "}
+            <TextLinkStyle>
+              <a href="https://www.firstinspires.org/robotics/ftc">
+                FIRST Tech Challenge
+              </a>
+            </TextLinkStyle>
+            , a smaller version of the competition we typically compete in. Due to
+            the smaller robot size, teams can build robots using tools and
+            equipment at home making it a more suitable robotics competition for 
+            the current circumstances.
           </p>
         </div>
         <div className="col-8 col-sm-6 col-lg-4">
