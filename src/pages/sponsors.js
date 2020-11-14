@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 
 import SponsorWrapper from "../components/Helpers/sponsorWrapper"
 
+import Nasa from "../images/sponsors/NASA.svg"
 import Bayer from "../images/sponsors/Bayer.svg"
 import LockheedMartin from "../images/sponsors/LockheedMartin.svg"
 import PerkinsCoie from "../images/sponsors/PerkinsCoie.svg"
@@ -50,6 +51,11 @@ const Sponsors = () => (
       </LinkStyle>
       <p css={{ fontSize: "1.2em" }}>Thank you for your support!</p>
       <div class="row align-items-center">
+        <div className="col-6 col-md-4">
+          <SponsorWrapper href="https://www.nasa.gov/">
+            <Nasa />
+          </SponsorWrapper>
+        </div>
         <div className="col-6 col-md-4">
           <SponsorWrapper href="https://www.bayer.com/">
             <Bayer />
