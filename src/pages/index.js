@@ -185,11 +185,11 @@ const ThirdPage = () => (
         <h1>Our Team</h1>
         <div className="row">
           <div className="col-6 col-md-3">
-            <h1 css={{ color: colors.red }}>25</h1>
+            <h1 css={{ color: colors.red }}>10</h1>
             <h3>Members</h3>
           </div>
           <div className="col-6 col-md-3">
-            <h1 css={{ color: colors.red }}>5</h1>
+            <h1 css={{ color: colors.red }}>3</h1>
             <h3>Mentors</h3>
           </div>
           <div className="col-6 col-md-3">

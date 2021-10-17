@@ -27,19 +27,25 @@ npm install
 code .
 ```
 
-5. When done with making changes, commit them:
+5. When fully deployed, the site is hosted on Github pages. However, when developing the site, the local development server is used. Run this command to see your changes to the website in real time (Note: this does not edit the site for other pople to see, just the user of the local machine):
+```
+npm run develop
+```
+The site will be hosted at `localhost:8000/`.
+
+6. When done with making changes, commit them:
 ```bash
 git add .
 git commit -m {message}
 ```
 
 
-6. Then, push to your own GitHub repository:
+7. Then, push to your own GitHub repository:
 
 ```bash
 git push origin master
 ```
-7. Finally, create a pull request by clicking the "New pull request" button on the [team's GitHub repo](https://github.com/FRCTeam2984/website).
+8. Finally, create a pull request by clicking the "New pull request" button on the [team's GitHub repo](https://github.com/FRCTeam2984/website).
   
 After awhile, the team repo and your own will diverge. Update your local repository as follows.
 
@@ -71,14 +77,6 @@ git merge upstream
 git branch -d upstream
 ```
 The website will be automatically deployed after a change to the repository. Click on the `Actions` tab to see the status of the deployment.
-
-# Develop
-
-## Running the Local Development Server
-```bash
-gatsby develop
-```
-The site will be hosted at `localhost:8000/`.
 
 ## Creating a New Blog Post
 1. Create a file called `src/markdown-pages/blog/{post}.md`.
