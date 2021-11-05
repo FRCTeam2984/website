@@ -51,13 +51,13 @@ git commit -m {message}
 8. Add your repo as a remote:
 ```bash
 # be sure you're in the website working directory!
-git remote add team https://github.com/{username}/website.git
+git remote add origin https://github.com/{username}/website.git
 ```
 9. Then, push to your own GitHub repository:
 ```bash
 git push origin master
 ```
-10. Finally, create a pull request by clicking the "New pull request" button on the [team's GitHub repo](https://github.com/FRCTeam2984/website). Congrats, you just edited the website! 😎😎🤗🤗
+10. Finally, create a pull request by clicking the "New pull request" button on the [team's GitHub repo](https://github.com/FRCTeam2984/website), pressing `Compare across forks`, and pressing `Create pull request`. Congrats, you just edited the website! 😎😎🤗🤗
 
 ## Handling Multiple Branches 🌿🌿
 - After awhile, the team repo and your own will diverge. Update your local repository as follows.
